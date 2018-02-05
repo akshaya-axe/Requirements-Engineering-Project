@@ -1,0 +1,4303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project SYSTEM "mga.dtd">
+
+<project guid="{C4A2F920-B166-4C20-9C65-DA203137E3DD}" cdate="Mon Apr 25 17:02:55 2016" mdate="Mon Apr 25 17:02:55 2016" version="" metaguid="{E869176D-FAF5-4975-BFD9-3997B1677158}" metaversion="" metaname="RoboConMetamodel">
+	<name>RootFolder</name>
+	<comment></comment>
+	<author></author>
+	<folder id="id-006a-00000001" relid="0x1" childrelidcntr="0x6" kind="RootFolder" guid="{e7ce550b-3391-4476-8b4b-91ae4aa20ded}">
+		<name>RootFolder</name>
+		<model id="id-0065-00000001" kind="FormationProtocol" guid="{1e48143f-42a9-442d-b7d7-f9465dbcde41}" relid="0x1" childrelidcntr="0x18">
+			<name>FormationProtocol</name>
+			<model id="id-0065-0000002c" kind="ACU" role="ACU" guid="{29f432c5-9c27-4f28-978d-8124a5fb648c}" relid="0x1" childrelidcntr="0x0">
+				<name>ACU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>280,420</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="AdminSoftware" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ConfigurationType" status="meta">
+					<value>Demonstration</value>
+				</attribute>
+				<attribute kind="OS" status="meta">
+					<value></value>
+				</attribute>
+			</model>
+			<model id="id-0065-0000002f" kind="RCU" role="RCU" guid="{c9e86fc9-433d-499f-8d16-512c69197c70}" derivedfrom="id-0065-00000010" isinstance="yes" isprimary="yes" relid="0x6" childrelidcntr="0x0">
+				<name>LeaderRCU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>623,175</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-00000030" kind="iRobot" role="iRobot" guid="{557d665b-b1b6-4cbb-b18b-9fb63072143c}" derivedfrom="id-0065-00000011" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>iRobotCreate</name>
+					<atom id="id-0066-0000005f" kind="Motor" role="Motor" guid="{2bfa83bf-a445-4b13-870b-7c7868120ca1}" derivedfrom="id-0066-0000002a" isinstance="yes" isprimary="no">
+						<name>Motor</name>
+					</atom>
+					<atom id="id-0066-00000060" kind="Wheels" role="Wheels" guid="{f7f9b92b-be42-44e6-ac89-547c191febb3}" derivedfrom="id-0066-00000029" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-00000061" kind="Wheels" role="Wheels" guid="{ed751c6d-6115-4ae3-8494-9fe8d64d4971}" derivedfrom="id-0066-00000028" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+				</model>
+				<model id="id-0065-00000031" kind="eBox3854" role="eBox3854" guid="{1ff261a0-ec94-431e-8cb6-6693c77d7845}" derivedfrom="id-0065-00000012" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>eBox3854</name>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-00000066" kind="FedoraLinux" role="FedoraLinux" guid="{db526951-252d-4253-9952-254b7ceed91e}" derivedfrom="id-0066-0000002e" isinstance="yes" isprimary="no">
+						<name>FedoraLinux</name>
+					</atom>
+					<atom id="id-0066-00000067" kind="FlashStorage" role="FlashStorage" guid="{e2999863-482d-4791-9611-6b48ea169f47}" derivedfrom="id-0066-0000002b" isinstance="yes" isprimary="no">
+						<name>FlashStorage</name>
+					</atom>
+					<atom id="id-0066-00000068" kind="Processor" role="Processor" guid="{9c03d24e-4471-4ac4-87b0-e171170e1d42}" derivedfrom="id-0066-0000002d" isinstance="yes" isprimary="no">
+						<name>Processor</name>
+					</atom>
+					<atom id="id-0066-00000069" kind="Memory" role="Memory" guid="{91018a10-84a3-4c6d-9d1c-97657c39bc99}" derivedfrom="id-0066-0000002c" isinstance="yes" isprimary="no">
+						<name>Memory</name>
+					</atom>
+				</model>
+				<atom id="id-0066-00000062" kind="IRReceiver" role="IRReceiver" guid="{6c05615d-f4d0-4876-b8f6-3c9cd0ecfa88}" derivedfrom="id-0066-00000031" isinstance="yes" isprimary="no">
+					<name>IRReceiver</name>
+				</atom>
+				<atom id="id-0066-00000063" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{2c5fbddf-11cf-4f33-a1b7-514f9ee61e1d}" derivedfrom="id-0066-00000030" isinstance="yes" isprimary="no">
+					<name>FrontBumperSensor</name>
+				</atom>
+				<atom id="id-0066-00000064" kind="GPSReceiver" role="GPSReceiver" guid="{9799e3cd-d06f-45b9-b689-4c620e5bae57}" derivedfrom="id-0066-0000002f" isinstance="yes" isprimary="no">
+					<name>GPSReceiver</name>
+				</atom>
+				<atom id="id-0066-00000065" kind="VideoCamera" role="VideoCamera" guid="{3f8142fe-88d9-4340-9233-cd241bf4f0be}" derivedfrom="id-0066-00000034" isinstance="yes" isprimary="no">
+					<name>VideoCamera</name>
+				</atom>
+				<atom id="id-0066-0000006a" kind="IRTransmitter" role="IRTransmitter" guid="{aa5d94f2-4efc-49cc-b9d0-dd134f904fe2}" derivedfrom="id-0066-00000032" isinstance="yes" isprimary="no">
+					<name>IRTransmitter</name>
+				</atom>
+				<atom id="id-0066-0000006b" kind="LANAdapter" role="LANAdapter" guid="{6ff3dba8-0465-4e2a-a912-ca0bb0eed217}" derivedfrom="id-0066-00000033" isinstance="yes" isprimary="no">
+					<name>LANAdapter</name>
+				</atom>
+			</model>
+			<model id="id-0065-00000032" kind="RCU" role="RCU" guid="{71300c15-eeb2-49b4-914f-3c0e0001057d}" derivedfrom="id-0065-00000010" isinstance="yes" isprimary="yes" relid="0x7" childrelidcntr="0x0">
+				<name>FollowerRCU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>644,644</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-00000033" kind="iRobot" role="iRobot" guid="{dd0efc8b-be7f-47af-9be7-c89366eea0f0}" derivedfrom="id-0065-00000011" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>iRobotCreate</name>
+					<atom id="id-0066-0000006c" kind="Motor" role="Motor" guid="{eace356f-59ad-47ee-945a-181dfad79053}" derivedfrom="id-0066-0000002a" isinstance="yes" isprimary="no">
+						<name>Motor</name>
+					</atom>
+					<atom id="id-0066-0000006d" kind="Wheels" role="Wheels" guid="{5300b075-6919-4712-afdf-a83dbdcb48ee}" derivedfrom="id-0066-00000029" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-0000006e" kind="Wheels" role="Wheels" guid="{70633026-24ba-4e17-97ca-17f5904a8ea2}" derivedfrom="id-0066-00000028" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+				</model>
+				<model id="id-0065-00000034" kind="eBox3854" role="eBox3854" guid="{e1cfd015-b46c-4a2e-80fd-b00fc2c4fbd6}" derivedfrom="id-0065-00000012" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>eBox3854</name>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-00000073" kind="FedoraLinux" role="FedoraLinux" guid="{fe970059-675f-4a6d-a229-7be17fa8cd16}" derivedfrom="id-0066-0000002e" isinstance="yes" isprimary="no">
+						<name>FedoraLinux</name>
+					</atom>
+					<atom id="id-0066-00000074" kind="FlashStorage" role="FlashStorage" guid="{368d581b-3584-449f-ab57-84eadab30cbb}" derivedfrom="id-0066-0000002b" isinstance="yes" isprimary="no">
+						<name>FlashStorage</name>
+					</atom>
+					<atom id="id-0066-00000075" kind="Processor" role="Processor" guid="{b338a9d2-7351-44cb-985d-f145e49d769b}" derivedfrom="id-0066-0000002d" isinstance="yes" isprimary="no">
+						<name>Processor</name>
+					</atom>
+					<atom id="id-0066-00000076" kind="Memory" role="Memory" guid="{03f2c33e-afc4-48b5-91f3-aaf0ad51f822}" derivedfrom="id-0066-0000002c" isinstance="yes" isprimary="no">
+						<name>Memory</name>
+					</atom>
+				</model>
+				<atom id="id-0066-0000006f" kind="IRReceiver" role="IRReceiver" guid="{a655e133-8f43-4884-8805-5b339e8ac4c1}" derivedfrom="id-0066-00000031" isinstance="yes" isprimary="no">
+					<name>IRReceiver</name>
+				</atom>
+				<atom id="id-0066-00000070" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{5d65de0d-021e-4aa6-bb07-a1427fe30275}" derivedfrom="id-0066-00000030" isinstance="yes" isprimary="no">
+					<name>FrontBumperSensor</name>
+				</atom>
+				<atom id="id-0066-00000071" kind="GPSReceiver" role="GPSReceiver" guid="{beec1acb-b12d-49c0-a1ee-b5a2daabaaa3}" derivedfrom="id-0066-0000002f" isinstance="yes" isprimary="no">
+					<name>GPSReceiver</name>
+				</atom>
+				<atom id="id-0066-00000072" kind="VideoCamera" role="VideoCamera" guid="{65420d17-6d14-455d-a196-1f2d419e6bdc}" derivedfrom="id-0066-00000034" isinstance="yes" isprimary="no">
+					<name>VideoCamera</name>
+				</atom>
+				<atom id="id-0066-00000077" kind="IRTransmitter" role="IRTransmitter" guid="{ec883494-46bb-43f7-857f-1028da38c9f8}" derivedfrom="id-0066-00000032" isinstance="yes" isprimary="no">
+					<name>IRTransmitter</name>
+				</atom>
+				<atom id="id-0066-00000078" kind="LANAdapter" role="LANAdapter" guid="{6b7f0c48-c727-4deb-8a06-cc1a4e8e59b2}" derivedfrom="id-0066-00000033" isinstance="yes" isprimary="no">
+					<name>LANAdapter</name>
+				</atom>
+			</model>
+			<atom id="id-0066-0000005e" kind="SensorSignals" role="SensorSignals" guid="{0d5e33b0-4ee7-41ef-a58c-c1efee279b8c}" relid="0x5">
+				<name>SensorSignals</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>742,987</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="TypeOfMesg" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-0000007d" kind="Switch_to_MovementMsg" role="Switch_to_MovementMsg" guid="{b8e6553d-65ee-4c9b-8c1e-2c631a84a85b}" relid="0x11">
+				<name>Switch_to_MovementMsg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1162,483</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="MessageType" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-0000007e" kind="Ready_to_SwitchMsg" role="Ready_to_SwitchMsg" guid="{dc073ab4-cd69-4b67-89a7-4a1f1a7a4026}" relid="0x12">
+				<name>Ready_to_SwitchMsg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1596,714</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="Message_type" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<connection id="id-0068-0000004e" kind="AssignRoleOnStartup" role="AssignRoleOnStartup" guid="{ac95c723-6ec6-4e3b-a887-b1f267200902}" relid="0x9">
+				<name>1.AssignRoleOnStartup</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x009300</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="ROLE" status="meta">
+					<value>Leader</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000002c"/>
+				<connpoint role="dst" target="id-0065-0000002f"/>
+			</connection>
+			<connection id="id-0068-0000004f" kind="AssignRole" role="AssignRole" guid="{384c826c-5c89-43fb-a318-5a1c2e2cef88}" relid="0xa">
+				<name>1.AssignRoleOnStartup</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x009300</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="role" status="meta">
+					<value>Leader</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000002c"/>
+				<connpoint role="dst" target="id-0065-00000032"/>
+			</connection>
+			<connection id="id-0068-00000050" kind="SignalConnection" role="SignalConnection" guid="{6b732114-8759-4a7d-8d33-27f6b14f060c}" relid="0xb">
+				<name>2.SensorSignalConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0066-0000005e"/>
+				<connpoint role="src" target="id-0066-00000070"/>
+			</connection>
+			<connection id="id-0068-00000051" kind="sentTo" role="sentTo" guid="{ca5c450e-1a21-4cd7-a96d-ff7216682303}" relid="0xc">
+				<name>2.sentTo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ns</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000032"/>
+				<connpoint role="src" target="id-0066-0000005e"/>
+			</connection>
+			<connection id="id-0068-0000005d" kind="FollowerMessageConnection" role="FollowerMessageConnection" guid="{ff4af999-3e07-4194-88be-247959f53ac5}" relid="0x13">
+				<name>3.Follower-MessageConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff6820</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000032"/>
+				<connpoint role="dst" target="id-0066-0000007e"/>
+			</connection>
+			<connection id="id-0068-0000005e" kind="sendto" role="sendto" guid="{95bd2a78-88da-4d8a-89b5-a108c60cd65c}" relid="0x14">
+				<name>3.Msg-to-leader</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ne</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff6820</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000002f"/>
+				<connpoint role="src" target="id-0066-0000007e"/>
+			</connection>
+			<connection id="id-0068-0000005f" kind="LeaderMessageConnection" role="LeaderMessageConnection" guid="{4b8727e3-d9ae-4219-88ee-dd7b8fb1fd39}" relid="0x15">
+				<name>4.Leader-MessageConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>n</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-0000002f"/>
+				<connpoint role="dst" target="id-0066-0000007d"/>
+			</connection>
+			<connection id="id-0068-00000060" kind="MessageTofollowerConnection" role="MessageTofollowerConnection" guid="{77316fca-104e-451f-9b76-3b1d4587f2d2}" relid="0x16">
+				<name>4.Message-To-follower</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Se</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000032"/>
+				<connpoint role="src" target="id-0066-0000007d"/>
+			</connection>
+		</model>
+		<model id="id-0065-00000002" kind="Modes" guid="{9c389169-c500-4b6e-93d3-8ef59e36585f}" relid="0x2" childrelidcntr="0x30">
+			<name>Modes</name>
+			<model id="id-0065-00000018" kind="BatteryLessthan20Percent" role="BatteryLessthan20Percent" guid="{9270d90a-0772-4e1e-8d37-353850044780}" relid="0x1" childrelidcntr="0x2">
+				<name>BatteryLessthan20Percent</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1302,1008</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-0000004c" kind="YeS" role="YeS" guid="{85d00c06-706f-4377-8424-c2d9876c49e7}" relid="0x1">
+					<name>YeS</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>749,133</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000004d" kind="Nope" role="Nope" guid="{ce178723-aa73-4653-a167-1082140dd782}" relid="0x2">
+					<name>Nope</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>350,147</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000019" kind="ComputePathAndMoveAhead" role="ComputePathAndMoveAhead" guid="{b776ce0d-a960-4b58-8b37-461f37d8ce2c}" relid="0x2" childrelidcntr="0x0">
+				<name>ComputePathAndMoveAhead</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1085,742</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-0000001a" kind="FollowersInMovement" role="FollowersInMovement" guid="{1c65292f-6834-4197-ab39-5204dbe32e35}" relid="0x3" childrelidcntr="0x0">
+				<name>FollowersInMovement</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>392,539</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-0000001b" kind="LeaderInMovement" role="LeaderInMovement" guid="{3053a10c-315b-4683-8c2d-49d4cae7e5e0}" relid="0x4" childrelidcntr="0x0">
+				<name>LeaderInMovement</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>938,406</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-0000001c" kind="IsitObstacle" role="IsitObstacle" guid="{ef5202bf-c580-4012-9128-fa415aa6b5a5}" relid="0x5" childrelidcntr="0x2">
+				<name>IsitObstacle</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1239,609</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-0000004e" kind="Yes" role="Yes" guid="{9f93b30d-6525-45e4-a8b7-30e43d880fed}" relid="0x1">
+					<name>Yes</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>532,140</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000004f" kind="No" role="No" guid="{60fa0592-9d29-4ca0-ad9e-3815d70bae6e}" relid="0x2">
+					<name>No</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>217,140</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-0000001d" kind="IdentifyNextWaypoint" role="IdentifyNextWaypoint" guid="{3a47bef2-ea9c-4d70-ac6f-ff5af6abfbb7}" relid="0x6" childrelidcntr="0x1">
+				<name>IdentifyNextWaypoint</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>938,609</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-00000050" kind="GPSReceiver" role="GPSReceiver" guid="{419f10ee-096b-4fb4-b43e-f6bd0f3406da}" relid="0x1">
+					<name>GPSReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>294,399</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-0000001e" kind="RCU" role="RCU" guid="{89de1eb9-0a4e-40f3-bdfc-5d59ad240bd6}" relid="0x7" childrelidcntr="0x0">
+				<name>LeaderRCU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1330,161</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+			</model>
+			<model id="id-0065-0000001f" kind="FormSiingleFileBehindGuide" role="FormSiingleFileBehindGuide" guid="{93a0a746-7a13-4f9d-8b28-19f764e5b980}" relid="0x8" childrelidcntr="0x1">
+				<name>Formation_BehindGuide</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1155,63</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-00000051" kind="ReadyToSwitchMsg" role="ReadyToSwitchMsg" guid="{9f040b0f-4e7d-4789-80c2-419c0454a9ef}" relid="0x1">
+					<name>ReadyToSwitchMsg</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,140</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000020" kind="Distances" role="Distances" guid="{62a9cb44-b35d-4c17-b568-b2e7606c17c1}" relid="0x9" childrelidcntr="0x2">
+				<name>Distances</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>595,1008</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-00000052" kind="IsSmall" role="IsSmall" guid="{4050379b-4138-4a8d-845a-8cd273535955}" relid="0x1">
+					<name>IsSmall</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>945,161</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000053" kind="IsNotSmall" role="IsNotSmall" guid="{1cbf2137-f252-413e-aee7-4bd672395b28}" relid="0x2">
+					<name>IsNotSmall</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>259,140</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000021" kind="Indoors" role="Indoors" guid="{577dd865-409a-4de2-8f67-cd582db26948}" relid="0xa" childrelidcntr="0x2">
+				<name>Indoors</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>350,882</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-00000054" kind="not_in_indoors" role="not_in_indoors" guid="{3e6a8af4-9a4b-4d1a-9fec-0a3861419ee6}" relid="0x1">
+					<name>not_in_indoors</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>378,133</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000055" kind="in_indoors" role="in_indoors" guid="{d41468cf-3913-4503-b57e-3d8c93d6f76e}" relid="0x2">
+					<name>in_indoors</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>1246,147</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000022" kind="SystemON" role="SystemON" guid="{b4abd074-1cac-4944-b2e5-1ca368f8f380}" relid="0xb" childrelidcntr="0x1">
+				<name>SystemON</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>147,63</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<model id="id-0065-00000023" kind="ACU" role="ACU" guid="{f6793bb7-6dc9-4ca9-a224-f61532be9fda}" relid="0x1" childrelidcntr="0x0">
+					<name>ACU</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>154,105</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="AdminSoftware" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ConfigurationType" status="meta">
+						<value>Demonstration</value>
+					</attribute>
+					<attribute kind="OS" status="meta">
+						<value></value>
+					</attribute>
+				</model>
+			</model>
+			<model id="id-0065-00000024" kind="AreaDark" role="AreaDark" guid="{85052ea8-8356-471d-b8d4-0dc219211c8f}" relid="0xc" childrelidcntr="0x2">
+				<name>AreaDark</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>217,728</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-00000056" kind="NotDark" role="NotDark" guid="{b182340a-a726-4bce-aa32-8cb431f22c6e}" relid="0x1">
+					<name>NotDark</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>231,168</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000057" kind="IsDark" role="IsDark" guid="{d9ef82a5-d912-429c-92f5-06bae5485573}" relid="0x2">
+					<name>IsDark</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>756,168</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000025" kind="RCU" role="RCU" guid="{904daed8-3048-4fa5-b394-2f1891092101}" relid="0xd" childrelidcntr="0x0">
+				<name>FollowerRCU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>364,224</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+			</model>
+			<model id="id-0065-00000026" kind="StopAndRecharge" role="StopAndRecharge" guid="{2e024873-7991-42c8-bf11-9c7b0e1d147e}" relid="0xe" childrelidcntr="0x0">
+				<name>StopAndRecharge</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1610,987</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000027" kind="IdentifyChargingStation" role="IdentifyChargingStation" guid="{0eba7029-1f14-4f75-9cbd-390219ff55b4}" relid="0xf" childrelidcntr="0x2">
+				<name>IdentifyChargingStation</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>945,980</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="Wifi" status="meta">
+					<value></value>
+				</attribute>
+				<atom id="id-0066-00000058" kind="Y" role="Y" guid="{0fc5e37e-232c-4d0b-bda2-325f1a80c861}" relid="0x1">
+					<name>Y</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>679,196</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000059" kind="N" role="N" guid="{52664f6f-16f2-4325-81d7-934f76639d69}" relid="0x2">
+					<name>N</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>161,210</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000028" kind="ObstacleAvoidanceAlgo" role="ObstacleAvoidanceAlgo" guid="{0eb1bb2c-ddf4-4fd4-af8e-25daaaba8731}" relid="0x10" childrelidcntr="0x0">
+				<name>ObstacleAvoidanceAlgo</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1631,581</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000029" kind="Leader" role="Leader" guid="{e4dcc5ea-5edf-43c4-b946-fe6a387e6bbf}" relid="0x11" childrelidcntr="0x1">
+				<name>Leader</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>924,238</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-0000005a" kind="SwitchToMovementMsg" role="SwitchToMovementMsg" guid="{6d8f9ebd-48ae-4996-9fbd-f47b72f2fd92}" relid="0x1">
+					<name>SwitchToMovementMsg</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>791,252</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-0000002a" kind="IdentifyGuide" role="IdentifyGuide" guid="{7dce4872-905e-4081-ac99-962755f9a804}" relid="0x12" childrelidcntr="0x2">
+				<name>IdentifyGuide</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>798,56</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="Sensor" status="meta">
+					<value></value>
+				</attribute>
+				<atom id="id-0066-0000005b" kind="YES" role="YES" guid="{76dffec9-1b3c-424f-b6b2-1ca9e11c3118}" relid="0x1">
+					<name>YES</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>504,105</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000005c" kind="NO" role="NO" guid="{d1f8168b-c132-4a5a-b800-bee7be29a629}" relid="0x2">
+					<name>NO</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>63,98</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-0000002b" kind="IdentifyConfigAndAssignRole" role="IdentifyConfigAndAssignRole" guid="{fc621914-d7f0-4d62-8b8c-ecc12940b3dd}" relid="0x13" childrelidcntr="0x0">
+				<name>IdentifyConfigAndAssignRole</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>455,56</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<connection id="id-0068-00000031" kind="ContinueTo" role="ContinueTo" guid="{84313aac-25cc-43a2-9362-2ab805a3d5d7}" relid="0x14">
+				<name>ContinueTo</name>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000019"/>
+				<connpoint role="dst" target="id-0065-0000001d"/>
+			</connection>
+			<connection id="id-0068-00000032" kind="IrConnection" role="IrConnection" guid="{6d4006b0-8231-479b-aa55-edc8bc956b44}" relid="0x15">
+				<name>IrConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>e</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="UseIR" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-0000001e"/>
+				<connpoint role="src" target="id-0066-00000052"/>
+			</connection>
+			<connection id="id-0068-00000033" kind="HaltAndWaitForInstructions" role="HaltAndWaitForInstructions" guid="{9116b5ca-3cb9-4884-a5d1-d4713cf6bf9d}" relid="0x16">
+				<name>HaltAndWaitForInstructions</name>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Instructions" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-00000025"/>
+				<connpoint role="src" target="id-0066-00000053"/>
+			</connection>
+			<connection id="id-0068-00000034" kind="IfDistance" role="IfDistance" guid="{94a7c633-6e0e-41c7-8712-dd846ebe5054}" relid="0x17">
+				<name>IfDistance</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>n</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000020"/>
+				<connpoint role="src" target="id-0066-00000055"/>
+			</connection>
+			<connection id="id-0068-00000035" kind="GPSConnection" role="GPSConnection" guid="{0b12dc52-f13d-46f2-95e0-54a73fa96dcb}" relid="0x18">
+				<name>GPSConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="UseGps" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-00000025"/>
+				<connpoint role="src" target="id-0066-00000054"/>
+			</connection>
+			<connection id="id-0068-00000036" kind="IfIndoors" role="IfIndoors" guid="{0958a1ca-b65d-4f9f-874d-d9b74293a445}" relid="0x19">
+				<name>IfIndoors</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>n</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000021"/>
+				<connpoint role="src" target="id-0066-00000057"/>
+			</connection>
+			<connection id="id-0068-00000037" kind="WhileInMovement" role="WhileInMovement" guid="{680f4297-ac02-4b73-8bd8-c9b719ef9475}" relid="0x1a">
+				<name>7.WhileInMovement</name>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-0000001a"/>
+				<connpoint role="dst" target="id-0065-00000024"/>
+			</connection>
+			<connection id="id-0068-00000038" kind="TrackLeader" role="TrackLeader" guid="{8d9ffab0-a874-45ed-a8f5-6f043ea7d671}" relid="0x1b">
+				<name>7.TrackLeader</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sw</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="customConnectionData" isopaque="yes">
+					<value>0,0,1,4,1,1,0,667,0,0</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="viaCamera" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000001a"/>
+				<connpoint role="dst" target="id-0065-00000029"/>
+			</connection>
+			<connection id="id-0068-00000039" kind="RcuMovement" role="RcuMovement" guid="{19246035-aa33-481a-8c85-9086fc6028bc}" relid="0x1c">
+				<name>6.FollowerSwitchTo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000001a"/>
+				<connpoint role="src" target="id-0065-00000025"/>
+			</connection>
+			<connection id="id-0068-0000003a" kind="ResumeTo" role="ResumeTo" guid="{3fd80e77-e823-46d9-95e1-11c99a8e327b}" relid="0x1d">
+				<name>15.ResumeTo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ee</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000001b"/>
+				<connpoint role="src" target="id-0065-00000026"/>
+			</connection>
+			<connection id="id-0068-0000003b" kind="ContinueToBeInMovement" role="ContinueToBeInMovement" guid="{1360713c-d35d-4bab-8621-8ff113233628}" relid="0x1e">
+				<name>13.ContinueToBeInMovement</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000001b"/>
+				<connpoint role="src" target="id-0066-0000004d"/>
+			</connection>
+			<connection id="id-0068-0000003c" kind="ProceedToRecharge" role="ProceedToRecharge" guid="{abc63d71-9e4e-41ea-b48e-75f7f82b97be}" relid="0x1f">
+				<name>14.ProceedToRecharge</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000026"/>
+				<connpoint role="src" target="id-0066-0000004c"/>
+			</connection>
+			<connection id="id-0068-0000003d" kind="NoChargingStation" role="NoChargingStation" guid="{0d1782d4-a08f-4642-b283-f4e303e07625}" relid="0x20">
+				<name>12.NoChargingStation</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000019"/>
+				<connpoint role="src" target="id-0066-00000059"/>
+			</connection>
+			<connection id="id-0068-0000003e" kind="BatteryLow" role="BatteryLow" guid="{87f57e24-f393-4240-b5b2-e8e05e4be0ec}" relid="0x21">
+				<name>13.BatteryLow</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000018"/>
+				<connpoint role="src" target="id-0066-00000058"/>
+			</connection>
+			<connection id="id-0068-0000003f" kind="DistanceLessThan10m" role="DistanceLessThan10m" guid="{37c6dafc-70d1-4f5b-a2f8-de7372f25143}" relid="0x22">
+				<name>12.DistanceLessThan10m</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000019"/>
+				<connpoint role="dst" target="id-0065-00000027"/>
+			</connection>
+			<connection id="id-0068-00000040" kind="NotObstacle" role="NotObstacle" guid="{9f10be66-2ea7-48f7-91ae-76c6c761ab56}" relid="0x23">
+				<name>11.NotObstacle</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>n</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000019"/>
+				<connpoint role="src" target="id-0066-0000004f"/>
+			</connection>
+			<connection id="id-0068-00000041" kind="MoveOnTo" role="MoveOnTo" guid="{1767976e-464d-44af-8842-d2ed833e2c4c}" relid="0x24">
+				<name>11.MoveOnTo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ee</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="customConnectionData" isopaque="yes">
+					<value>0,0,2,3,1,1,0,816,0,0</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000019"/>
+				<connpoint role="src" target="id-0065-00000028"/>
+			</connection>
+			<connection id="id-0068-00000042" kind="MovementToWaypointConnection" role="MovementToWaypointConnection" guid="{5000941b-ec2e-40ba-a555-cbbb79699709}" relid="0x25">
+				<name>8.Proceedto</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-0000001b"/>
+				<connpoint role="dst" target="id-0065-0000001d"/>
+			</connection>
+			<connection id="id-0068-00000043" kind="LeaderSwitchTo" role="LeaderSwitchTo" guid="{9d7bf204-8a0d-48dc-b07b-9a827fce9fcd}" relid="0x26">
+				<name>6.LeaderSwitchTo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000001b"/>
+				<connpoint role="src" target="id-0065-00000029"/>
+			</connection>
+			<connection id="id-0068-00000044" kind="SentTo" role="SentTo" guid="{96c72d92-0764-4859-adfe-a7f3e0735b9f}" relid="0x27">
+				<name>4.SendMsgTo</name>
+				<regnode name="color" isopaque="yes">
+					<value>0xd2b48c</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000029"/>
+				<connpoint role="src" target="id-0066-00000051"/>
+			</connection>
+			<connection id="id-0068-00000045" kind="GuideIsFound" role="GuideIsFound" guid="{95482b7e-038b-4fb6-bd6d-8d97a7a194c0}" relid="0x28">
+				<name>3.GuideIsFound</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000001f"/>
+				<connpoint role="src" target="id-0066-0000005b"/>
+			</connection>
+			<connection id="id-0068-00000046" kind="ACUdirectesRCUto" role="ACUdirectesRCUto" guid="{02d08e1f-11a7-437c-8852-703be02ed303}" relid="0x29">
+				<name>1.ACUdirectesRCUto</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000022"/>
+				<connpoint role="dst" target="id-0065-0000002b"/>
+			</connection>
+			<connection id="id-0068-00000047" kind="AsRCUMovesAlong" role="AsRCUMovesAlong" guid="{0ae75fcf-8c1b-4fc3-abc5-e79e2d3b4a0c}" relid="0x2a">
+				<name>9.AlongThePathEncounters</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="customConnectionData" isopaque="yes">
+					<value>0,0,0,1,1,1,0,630,0,0</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000001c"/>
+				<connpoint role="src" target="id-0065-0000001d"/>
+			</connection>
+			<connection id="id-0068-00000048" kind="Invoke" role="Invoke" guid="{e7b73c9e-c256-4700-b228-b99e2029d783}" relid="0x2b">
+				<name>10.Invoke</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000028"/>
+				<connpoint role="src" target="id-0066-0000004e"/>
+			</connection>
+			<connection id="id-0068-00000049" kind="ProceedTo" role="ProceedTo" guid="{376e9146-bc43-4d97-b70b-c8fb52c3ac68}" relid="0x2c">
+				<name>2.ProceedTo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000002a"/>
+				<connpoint role="src" target="id-0065-0000002b"/>
+			</connection>
+			<connection id="id-0068-0000004a" kind="Cameraconnection" role="Cameraconnection" guid="{1036544c-58ae-43cc-980b-35ff5a9d1a60}" relid="0x2d">
+				<name>Cameraconnection</name>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="UseCamera" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-00000025"/>
+				<connpoint role="src" target="id-0066-00000056"/>
+			</connection>
+			<connection id="id-0068-0000004b" kind="IsA" role="IsA" guid="{d923144d-6382-493a-9560-1cf616f081f8}" relid="0x2e">
+				<name>5.BroadcastMsgToFollower</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>En</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xd2b48c</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000025"/>
+				<connpoint role="src" target="id-0065-00000029"/>
+			</connection>
+			<connection id="id-0068-0000004c" kind="IsA" role="IsA" guid="{fb7b774d-7f39-4495-a2fb-9b6b504ff373}" relid="0x2f">
+				<name>IsA</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000001e"/>
+				<connpoint role="src" target="id-0065-00000029"/>
+			</connection>
+			<connection id="id-0068-0000004d" kind="WhenNoGuide" role="WhenNoGuide" guid="{81bb61da-086f-4c98-ae62-0f08848bcbaa}" relid="0x30">
+				<name>3.GuideNotFound</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>n</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000029"/>
+				<connpoint role="src" target="id-0066-0000005c"/>
+			</connection>
+		</model>
+		<model id="id-0065-00000003" kind="RechargeProtocol" guid="{46a4eb6c-c087-4119-99d3-742d5fe41753}" relid="0x3" childrelidcntr="0x24">
+			<name>RechargeProtocol</name>
+			<model id="id-0065-00000035" kind="StopAndRecharge" role="StopAndRecharge" guid="{0985b3e6-f734-4b7b-9eb0-6b145559e9bc}" relid="0x2" childrelidcntr="0x0">
+				<name>Recharge</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1190,441</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000036" kind="RCU" role="RCU" guid="{9db337f0-406b-41be-9b8c-d639aa201ad9}" relid="0x3" childrelidcntr="0x8">
+				<name>RCU1</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>343,371</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-00000054" kind="iRobot" role="iRobot" guid="{b3498381-9a53-4c21-8aee-3a572243ce6a}" relid="0x7" childrelidcntr="0x3">
+					<name>iRobot</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>784,609</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<atom id="id-0066-000000e1" kind="Wheels" role="Wheels" guid="{dbf44f1d-627a-4ef6-9ad6-2981fb660040}" relid="0x1">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>777,182</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-000000e2" kind="Wheels" role="Wheels" guid="{11f82f46-a5dc-484e-824a-76757b8060e1}" relid="0x2">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>735,448</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-000000e3" kind="Motor" role="Motor" guid="{f7f34f1b-ba18-46a8-a7b7-8ef52dbe86a0}" relid="0x3">
+						<name>Motor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>203,224</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<model id="id-0065-00000055" kind="eBox3854" role="eBox3854" guid="{97911b65-132c-458d-a131-2421dd5a106d}" relid="0x8" childrelidcntr="0x4">
+					<name>eBox3854</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>819,406</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-000000dd" kind="Processor" role="Processor" guid="{449a156a-017a-419b-b068-a179bb4bb408}" relid="0x1">
+						<name>Processor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>406,168</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-000000de" kind="FlashStorage" role="FlashStorage" guid="{069dad3e-88b2-448b-8524-ae695a01312f}" relid="0x2">
+						<name>FlashStorage</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>343,406</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-000000df" kind="FedoraLinux" role="FedoraLinux" guid="{3cd0ca0f-7aa2-4bc6-8561-8f7e150e835e}" relid="0x3">
+						<name>FedoraLinux</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>343,525</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-000000e0" kind="Memory" role="Memory" guid="{490e11ce-9874-4197-80d1-ed15aba6ae84}" relid="0x4">
+						<name>Memory</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>567,119</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<atom id="id-0066-000000d7" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{dd2827e3-bf87-462e-8916-c9c38fc03fd5}" relid="0x1">
+					<name>FrontBumperSensor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>140,77</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-000000d8" kind="GPSReceiver" role="GPSReceiver" guid="{1ef39029-1fe9-450d-af86-b4eae9baef4f}" relid="0x2">
+					<name>GPSReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>63,259</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-000000d9" kind="IRTransmitter" role="IRTransmitter" guid="{fa19e661-7b65-4428-b5f6-22b484d1c04e}" relid="0x3">
+					<name>IRTransmitter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>42,490</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-000000da" kind="IRReceiver" role="IRReceiver" guid="{3e2c4c5b-b8ee-4096-b80b-9a7ed9c7dd19}" relid="0x4">
+					<name>IRReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>56,714</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-000000db" kind="VideoCamera" role="VideoCamera" guid="{8ca2d0c3-223e-49bd-8dfc-bc010600f57f}" relid="0x5">
+					<name>VideoCamera</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>105,994</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-000000dc" kind="LANAdapter" role="LANAdapter" guid="{a861a985-1606-47a4-a2de-f3642c5af98c}" relid="0x6">
+					<name>LANAdapter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>63,882</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000037" kind="IdentifyChargingStation" role="IdentifyChargingStation" guid="{43a86fe0-99b1-49a1-a355-e15161cc7268}" relid="0x4" childrelidcntr="0x0">
+				<name>IdentifyChargingStation</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>441,168</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="Wifi" status="meta">
+					<value></value>
+				</attribute>
+			</model>
+			<model id="id-0065-00000038" kind="BatteryLessthan20Percent" role="BatteryLessthan20Percent" guid="{93ba5a18-e9d3-499c-9905-6ff93f7ceb03}" relid="0x5" childrelidcntr="0x2">
+				<name>If_BatteryLessthan20Percent</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>665,777</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<atom id="id-0066-0000007c" kind="YeS" role="YeS" guid="{9bb649fa-114f-42dd-bf6b-1a031ed3cbe0}" relid="0x1">
+					<name>YeS</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>658,168</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-0000004b" kind="RCU" role="RCU" guid="{c1e825f0-338b-41b4-b0ff-582d704c35a9}" derivedfrom="id-0065-00000010" isinstance="yes" isprimary="yes" relid="0x1c" childrelidcntr="0x0">
+				<name>Rcu3</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1764,777</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-0000004c" kind="iRobot" role="iRobot" guid="{afe8aeff-4cdf-4cf1-a591-4bf9ea537880}" derivedfrom="id-0065-00000011" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>iRobotCreate</name>
+					<atom id="id-0066-000000b6" kind="Wheels" role="Wheels" guid="{75385943-6541-4656-a762-c787bbabb96e}" derivedfrom="id-0066-00000028" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-000000b7" kind="Wheels" role="Wheels" guid="{07d80035-d7d2-4c79-89e7-9713cb6aca54}" derivedfrom="id-0066-00000029" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-000000b8" kind="Motor" role="Motor" guid="{aa198237-e9ff-4592-aa00-52ca5063c6d5}" derivedfrom="id-0066-0000002a" isinstance="yes" isprimary="no">
+						<name>Motor</name>
+					</atom>
+				</model>
+				<model id="id-0065-0000004d" kind="eBox3854" role="eBox3854" guid="{94603c99-0374-400e-9774-ed96f39a435c}" derivedfrom="id-0065-00000012" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>eBox3854</name>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-000000b9" kind="FlashStorage" role="FlashStorage" guid="{b6438f1e-61ff-4a1e-b644-8743276d6132}" derivedfrom="id-0066-0000002b" isinstance="yes" isprimary="no">
+						<name>FlashStorage</name>
+					</atom>
+					<atom id="id-0066-000000ba" kind="Memory" role="Memory" guid="{9c94f339-476f-4b0b-82c4-adbc13bfa5eb}" derivedfrom="id-0066-0000002c" isinstance="yes" isprimary="no">
+						<name>Memory</name>
+					</atom>
+					<atom id="id-0066-000000bb" kind="Processor" role="Processor" guid="{61c465d7-30ee-4d85-884b-06cdb3bae7ac}" derivedfrom="id-0066-0000002d" isinstance="yes" isprimary="no">
+						<name>Processor</name>
+					</atom>
+					<atom id="id-0066-000000bc" kind="FedoraLinux" role="FedoraLinux" guid="{0fc8fe5f-c6a6-4c63-8745-5d98cb253981}" derivedfrom="id-0066-0000002e" isinstance="yes" isprimary="no">
+						<name>FedoraLinux</name>
+					</atom>
+				</model>
+				<atom id="id-0066-000000b0" kind="GPSReceiver" role="GPSReceiver" guid="{0beee7e0-2c70-4449-80e9-c26614fa087c}" derivedfrom="id-0066-0000002f" isinstance="yes" isprimary="no">
+					<name>GPSReceiver</name>
+				</atom>
+				<atom id="id-0066-000000b1" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{8cceb9a4-2d92-4931-a6cf-93bba020eff9}" derivedfrom="id-0066-00000030" isinstance="yes" isprimary="no">
+					<name>FrontBumperSensor</name>
+				</atom>
+				<atom id="id-0066-000000b2" kind="IRReceiver" role="IRReceiver" guid="{b0c014fc-0573-4f6f-b2fa-9e971ec162c5}" derivedfrom="id-0066-00000031" isinstance="yes" isprimary="no">
+					<name>IRReceiver</name>
+				</atom>
+				<atom id="id-0066-000000b3" kind="IRTransmitter" role="IRTransmitter" guid="{fdc4c5ad-2203-4153-bdb0-01bbaec107eb}" derivedfrom="id-0066-00000032" isinstance="yes" isprimary="no">
+					<name>IRTransmitter</name>
+				</atom>
+				<atom id="id-0066-000000b4" kind="LANAdapter" role="LANAdapter" guid="{9d592487-8ec4-48d3-bebb-43217481570f}" derivedfrom="id-0066-00000033" isinstance="yes" isprimary="no">
+					<name>LANAdapter</name>
+				</atom>
+				<atom id="id-0066-000000b5" kind="VideoCamera" role="VideoCamera" guid="{524dfb60-0d76-4250-8016-ab5e3e5818fb}" derivedfrom="id-0066-00000034" isinstance="yes" isprimary="no">
+					<name>VideoCamera</name>
+				</atom>
+			</model>
+			<model id="id-0065-0000004e" kind="RCU" role="RCU" guid="{b1b03537-4b21-411b-8b64-8e555b2b3474}" derivedfrom="id-0065-00000010" isinstance="yes" isprimary="yes" relid="0x1d" childrelidcntr="0x0">
+				<name>Rcu2</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1435,763</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-0000004f" kind="iRobot" role="iRobot" guid="{05c07f43-a539-4240-8102-c06f5790e425}" derivedfrom="id-0065-00000011" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>iRobotCreate</name>
+					<atom id="id-0066-000000c3" kind="Wheels" role="Wheels" guid="{7b063679-5e8a-463c-a8ef-d29a850414dd}" derivedfrom="id-0066-00000028" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-000000c4" kind="Wheels" role="Wheels" guid="{7c312fbf-74c3-4562-8a98-d098f0580f7e}" derivedfrom="id-0066-00000029" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-000000c5" kind="Motor" role="Motor" guid="{7d2e0a20-4b60-4f87-83e6-26f6cf767ae7}" derivedfrom="id-0066-0000002a" isinstance="yes" isprimary="no">
+						<name>Motor</name>
+					</atom>
+				</model>
+				<model id="id-0065-00000050" kind="eBox3854" role="eBox3854" guid="{3f6edc0e-139f-404f-95c9-d2b8b8192ab5}" derivedfrom="id-0065-00000012" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>eBox3854</name>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-000000c6" kind="FlashStorage" role="FlashStorage" guid="{3cbbccf4-b527-46e2-89b9-fecaff9bba7b}" derivedfrom="id-0066-0000002b" isinstance="yes" isprimary="no">
+						<name>FlashStorage</name>
+					</atom>
+					<atom id="id-0066-000000c7" kind="Memory" role="Memory" guid="{2b244d72-bf96-42bd-9316-a6c909e3ed74}" derivedfrom="id-0066-0000002c" isinstance="yes" isprimary="no">
+						<name>Memory</name>
+					</atom>
+					<atom id="id-0066-000000c8" kind="Processor" role="Processor" guid="{120679fb-0844-4121-bdce-f30d04efe979}" derivedfrom="id-0066-0000002d" isinstance="yes" isprimary="no">
+						<name>Processor</name>
+					</atom>
+					<atom id="id-0066-000000c9" kind="FedoraLinux" role="FedoraLinux" guid="{fa3346ac-8c63-4dee-b574-3eff5248ba8e}" derivedfrom="id-0066-0000002e" isinstance="yes" isprimary="no">
+						<name>FedoraLinux</name>
+					</atom>
+				</model>
+				<atom id="id-0066-000000bd" kind="GPSReceiver" role="GPSReceiver" guid="{75b6ad1b-1bd2-46c3-b053-5bf19f730b3a}" derivedfrom="id-0066-0000002f" isinstance="yes" isprimary="no">
+					<name>GPSReceiver</name>
+				</atom>
+				<atom id="id-0066-000000be" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{69945adc-8d3a-4237-a4c6-3204599e4dc4}" derivedfrom="id-0066-00000030" isinstance="yes" isprimary="no">
+					<name>FrontBumperSensor</name>
+				</atom>
+				<atom id="id-0066-000000bf" kind="IRReceiver" role="IRReceiver" guid="{9b38fd4e-1a9a-4187-932b-bd6a1c0cc8e6}" derivedfrom="id-0066-00000031" isinstance="yes" isprimary="no">
+					<name>IRReceiver</name>
+				</atom>
+				<atom id="id-0066-000000c0" kind="IRTransmitter" role="IRTransmitter" guid="{46ec5c36-05bf-4b14-b4c2-8ead743ea096}" derivedfrom="id-0066-00000032" isinstance="yes" isprimary="no">
+					<name>IRTransmitter</name>
+				</atom>
+				<atom id="id-0066-000000c1" kind="LANAdapter" role="LANAdapter" guid="{3b584047-b9e0-4533-8f2f-fcaf46220061}" derivedfrom="id-0066-00000033" isinstance="yes" isprimary="no">
+					<name>LANAdapter</name>
+				</atom>
+				<atom id="id-0066-000000c2" kind="VideoCamera" role="VideoCamera" guid="{2289e99c-111c-4f29-b914-54e1a76dae45}" derivedfrom="id-0066-00000034" isinstance="yes" isprimary="no">
+					<name>VideoCamera</name>
+				</atom>
+			</model>
+			<model id="id-0065-00000051" kind="RCU" role="RCU" guid="{bb4235bb-7b34-45c7-8fc4-b770b2b414f0}" derivedfrom="id-0065-00000010" isinstance="yes" isprimary="yes" relid="0x1e" childrelidcntr="0x0">
+				<name>Rcu4</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1575,1057</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-00000052" kind="iRobot" role="iRobot" guid="{f484e52b-d8e5-40aa-8178-748ac47ba8a5}" derivedfrom="id-0065-00000011" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>iRobotCreate</name>
+					<atom id="id-0066-000000d0" kind="Wheels" role="Wheels" guid="{ed703382-e7ce-41fc-affc-f98687000734}" derivedfrom="id-0066-00000028" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-000000d1" kind="Wheels" role="Wheels" guid="{724cb04d-dc68-4ee1-ae3a-c08d8b0f2ba5}" derivedfrom="id-0066-00000029" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-000000d2" kind="Motor" role="Motor" guid="{b31dd635-78c6-49ee-8616-8587d8fd3125}" derivedfrom="id-0066-0000002a" isinstance="yes" isprimary="no">
+						<name>Motor</name>
+					</atom>
+				</model>
+				<model id="id-0065-00000053" kind="eBox3854" role="eBox3854" guid="{f2412437-d394-4e16-b68b-df01a5742c12}" derivedfrom="id-0065-00000012" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>eBox3854</name>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-000000d3" kind="FlashStorage" role="FlashStorage" guid="{a50389d6-aa84-4bfb-9b8c-47ba50f8101f}" derivedfrom="id-0066-0000002b" isinstance="yes" isprimary="no">
+						<name>FlashStorage</name>
+					</atom>
+					<atom id="id-0066-000000d4" kind="Memory" role="Memory" guid="{9a26773a-02d8-421f-9770-cd949014ff56}" derivedfrom="id-0066-0000002c" isinstance="yes" isprimary="no">
+						<name>Memory</name>
+					</atom>
+					<atom id="id-0066-000000d5" kind="Processor" role="Processor" guid="{c6528262-3159-4442-9248-7372542210a4}" derivedfrom="id-0066-0000002d" isinstance="yes" isprimary="no">
+						<name>Processor</name>
+					</atom>
+					<atom id="id-0066-000000d6" kind="FedoraLinux" role="FedoraLinux" guid="{10a6027e-0eb5-4b8c-8341-86816a7c1c6c}" derivedfrom="id-0066-0000002e" isinstance="yes" isprimary="no">
+						<name>FedoraLinux</name>
+					</atom>
+				</model>
+				<atom id="id-0066-000000ca" kind="GPSReceiver" role="GPSReceiver" guid="{4341c872-75ce-42b7-860b-925c776c8aa9}" derivedfrom="id-0066-0000002f" isinstance="yes" isprimary="no">
+					<name>GPSReceiver</name>
+				</atom>
+				<atom id="id-0066-000000cb" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{09119193-83cf-42fc-a849-be3c656f7ef3}" derivedfrom="id-0066-00000030" isinstance="yes" isprimary="no">
+					<name>FrontBumperSensor</name>
+				</atom>
+				<atom id="id-0066-000000cc" kind="IRReceiver" role="IRReceiver" guid="{28ccd865-b864-4f5d-aed0-fe0b70d59839}" derivedfrom="id-0066-00000031" isinstance="yes" isprimary="no">
+					<name>IRReceiver</name>
+				</atom>
+				<atom id="id-0066-000000cd" kind="IRTransmitter" role="IRTransmitter" guid="{73a2adaf-0c86-47db-9f10-602236663bae}" derivedfrom="id-0066-00000032" isinstance="yes" isprimary="no">
+					<name>IRTransmitter</name>
+				</atom>
+				<atom id="id-0066-000000ce" kind="LANAdapter" role="LANAdapter" guid="{8824ee1f-4715-4a62-8038-0d9471165336}" derivedfrom="id-0066-00000033" isinstance="yes" isprimary="no">
+					<name>LANAdapter</name>
+				</atom>
+				<atom id="id-0066-000000cf" kind="VideoCamera" role="VideoCamera" guid="{a66ea570-410a-4a90-b590-82c71bdeabc5}" derivedfrom="id-0066-00000034" isinstance="yes" isprimary="no">
+					<name>VideoCamera</name>
+				</atom>
+			</model>
+			<atom id="id-0066-0000007f" kind="HaltMsg" role="HaltMsg" guid="{484e4008-9978-46f1-ad8d-9de8f407c378}" relid="0x13">
+				<name>HaltMsg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1036,777</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="MsgType" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000080" kind="ChangeToMovementMsg" role="ChangeToMovementMsg" guid="{af9cc5d3-9864-48ac-ac71-9afabdc35b16}" relid="0x16">
+				<name>ChangeToMovementMsg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1701,294</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="message_type" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<connection id="id-0068-00000056" kind="WifiBroadcast" role="WifiBroadcast" guid="{758d8033-d27b-4982-9be6-f1a145b58ef5}" relid="0x6">
+				<name>1.WifiBroadcast_location</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x009300</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="coordinateX" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="coordinateY" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-00000036"/>
+				<connpoint role="src" target="id-0065-00000037"/>
+			</connection>
+			<connection id="id-0068-00000057" kind="CheckDistanceLessThan10" role="CheckDistanceLessThan10" guid="{7718e841-820c-42b9-ae00-cbb1a37c5376}" relid="0x7">
+				<name>2.CheckDistanceLessThan10</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ns</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff6820</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="distance" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000036"/>
+				<connpoint role="dst" target="id-0065-00000037"/>
+			</connection>
+			<connection id="id-0068-00000058" kind="checks" role="checks" guid="{d3e2f9ef-9138-4eff-ac64-acd6f35be62c}" relid="0xc">
+				<name>3.checks</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sw</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff6820</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000036"/>
+				<connpoint role="dst" target="id-0065-00000038"/>
+			</connection>
+			<connection id="id-0068-0000005c" kind="GoesAnd" role="GoesAnd" guid="{84593885-2ab8-4851-ae23-973e28c09de0}" relid="0xf">
+				<name>5.RCU-GoesTo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>e</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="RechargeMode" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-00000035"/>
+				<connpoint role="src" target="id-0065-00000036"/>
+			</connection>
+			<connection id="id-0068-00000061" kind="mesgconnection" role="mesgconnection" guid="{4bf49319-0a1e-4dde-9df6-617550861f21}" relid="0x14">
+				<name>yes-MesgConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x000000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000038"/>
+				<connpoint role="dst" target="id-0066-0000007f"/>
+			</connection>
+			<connection id="id-0068-00000063" kind="msgConnection" role="msgConnection" guid="{7ddd0eaf-bc2f-455b-a2f1-d1e49f2dd3d8}" relid="0x17">
+				<name>msgConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x000000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000035"/>
+				<connpoint role="dst" target="id-0066-00000080"/>
+			</connection>
+			<connection id="id-0068-0000007e" kind="InformOtherRCU" role="InformOtherRCU" guid="{5ac57a23-b221-4e0e-9d91-a97f99a7e1cf}" relid="0x1f">
+				<name>4.InformOtherRCU</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000004e"/>
+				<connpoint role="src" target="id-0066-0000007f"/>
+			</connection>
+			<connection id="id-0068-0000007f" kind="InformOtherRCU" role="InformOtherRCU" guid="{9a27905b-4162-4324-94d1-ed4c35620b1e}" relid="0x20">
+				<name>4.InformOtherRCU</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>En</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000004b"/>
+				<connpoint role="src" target="id-0066-0000007f"/>
+			</connection>
+			<connection id="id-0068-00000080" kind="InformOtherRCU" role="InformOtherRCU" guid="{0582758d-6ef5-4ff0-8a7c-9604e7d85ae0}" relid="0x21">
+				<name>4.InformOtherRCU</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000051"/>
+				<connpoint role="src" target="id-0066-0000007f"/>
+			</connection>
+			<connection id="id-0068-00000081" kind="msgSentToRcu" role="msgSentToRcu" guid="{72c82a55-c13d-46ea-a33e-c3242ddc65d2}" relid="0x22">
+				<name>6.Message_to_RCUs</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000004e"/>
+				<connpoint role="src" target="id-0066-00000080"/>
+			</connection>
+			<connection id="id-0068-00000082" kind="msgSentToRcu" role="msgSentToRcu" guid="{791bbfd4-344a-4f6b-9710-733d84802e25}" relid="0x23">
+				<name>6.Message_to_RCUs</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000004b"/>
+				<connpoint role="src" target="id-0066-00000080"/>
+			</connection>
+			<connection id="id-0068-00000083" kind="msgSentToRcu" role="msgSentToRcu" guid="{c0c96018-8d96-4696-82fa-b92af5b2bc99}" relid="0x24">
+				<name>6.Message_to_RCUs</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Se</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000051"/>
+				<connpoint role="src" target="id-0066-00000080"/>
+			</connection>
+		</model>
+		<model id="id-0065-00000004" kind="RoboConConvoy" guid="{d02d8894-27f0-412d-9639-dbdea156119a}" relid="0x4" childrelidcntr="0x29">
+			<name>RoboConConvoy</name>
+			<model id="id-0065-00000006" kind="RCU" role="RCU" guid="{12491a9c-e163-43d6-8611-12903cc5ffbd}" relid="0x1" childrelidcntr="0x8">
+				<name>RCU4</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1043,455</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-00000007" kind="iRobot" role="iRobot" guid="{7eff20c3-1441-4084-8206-cc8e9c310130}" relid="0x1" childrelidcntr="0x3">
+					<name>iRobotCreate</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>861,385</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<atom id="id-0066-00000001" kind="Wheels" role="Wheels" guid="{b64f0c7d-0dd4-4ce1-9c2e-828486b0a2c2}" relid="0x1">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1162,112</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000002" kind="Wheels" role="Wheels" guid="{5d145e46-c5f0-4bda-a16d-18974c3f0cf8}" relid="0x2">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1225,406</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000003" kind="Motor" role="Motor" guid="{4bcf8362-6919-4d89-bab9-ba0c1459099d}" relid="0x3">
+						<name>Motor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>420,203</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<model id="id-0065-00000008" kind="eBox3854" role="eBox3854" guid="{48ee2184-00e5-4879-bc84-f5a43ae216a4}" relid="0x2" childrelidcntr="0x4">
+					<name>eBox3854</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>868,210</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-00000004" kind="FlashStorage" role="FlashStorage" guid="{f6f4ba2e-96ca-4ef1-8842-7e710b330f68}" relid="0x1">
+						<name>FlashStorage</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>973,259</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000005" kind="Memory" role="Memory" guid="{57d200c7-42ee-4b90-9d93-3f998862cccc}" relid="0x2">
+						<name>Memory</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>994,420</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000006" kind="Processor" role="Processor" guid="{7695dd0c-3d6e-4ec2-9f6d-ce7e2ba165ca}" relid="0x3">
+						<name>Processor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,525</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000007" kind="FedoraLinux" role="FedoraLinux" guid="{8b23d6e9-d6e9-4870-bb1b-37cd24c48d35}" relid="0x4">
+						<name>FedoraLinux</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,714</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<atom id="id-0066-00000008" kind="GPSReceiver" role="GPSReceiver" guid="{933bafb3-b245-4dc3-9d2e-e8c661b0d893}" relid="0x3">
+					<name>GPSReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,161</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000009" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{8bac816c-e574-4a81-9c27-bc9081cb298c}" relid="0x4">
+					<name>FrontBumperSensor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>252,7</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000000a" kind="IRReceiver" role="IRReceiver" guid="{b0e8f8a2-c336-49b6-b0a2-fc84857f6038}" relid="0x5">
+					<name>IRReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,315</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000000b" kind="IRTransmitter" role="IRTransmitter" guid="{ff15e42e-3b21-47ed-bbf1-188a230cd4d4}" relid="0x6">
+					<name>IRTransmitter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,476</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000000c" kind="LANAdapter" role="LANAdapter" guid="{b8b10def-197f-486b-b1e0-4576cf03d5de}" relid="0x7">
+					<name>LANAdapter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>294,672</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000000d" kind="VideoCamera" role="VideoCamera" guid="{01c0432f-0109-4ad6-9d32-3993adc8aaae}" relid="0x8">
+					<name>VideoCamera</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>308,798</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000009" kind="RCU" role="RCU" guid="{038a332d-5270-4cd5-84fe-50714792106f}" relid="0x2" childrelidcntr="0x8">
+				<name>RCU2</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>973,56</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-0000000a" kind="iRobot" role="iRobot" guid="{2ecaf359-bbb9-4611-b886-93678a0ecdd0}" relid="0x1" childrelidcntr="0x3">
+					<name>iRobotCreate</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>861,385</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<atom id="id-0066-0000000e" kind="Wheels" role="Wheels" guid="{30b259c7-94fa-43bf-b114-a5665b54031e}" relid="0x1">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1162,112</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000000f" kind="Wheels" role="Wheels" guid="{b01ba34e-5e15-4df0-99fc-d350df06d4db}" relid="0x2">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1225,406</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000010" kind="Motor" role="Motor" guid="{dc446066-360d-4b26-872f-4f2f8018f090}" relid="0x3">
+						<name>Motor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>420,203</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<model id="id-0065-0000000b" kind="eBox3854" role="eBox3854" guid="{289e1f62-f682-4574-8056-0c40da5b79fb}" relid="0x2" childrelidcntr="0x4">
+					<name>eBox3854</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>868,210</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-00000011" kind="FlashStorage" role="FlashStorage" guid="{2609a5f8-34d4-49ba-8b1b-b53956858a2e}" relid="0x1">
+						<name>FlashStorage</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>973,259</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000012" kind="Memory" role="Memory" guid="{79a0ff37-3b35-4cf5-9b38-f28fa7f37f82}" relid="0x2">
+						<name>Memory</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>994,420</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000013" kind="Processor" role="Processor" guid="{00af38fb-1d82-4697-a6ee-81e761eb2009}" relid="0x3">
+						<name>Processor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,525</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000014" kind="FedoraLinux" role="FedoraLinux" guid="{e73f84bf-b94b-4d3d-8be0-63037b1e3c38}" relid="0x4">
+						<name>FedoraLinux</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,714</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<atom id="id-0066-00000015" kind="GPSReceiver" role="GPSReceiver" guid="{724c7cd8-35d5-423c-8f5e-4d58860f33ab}" relid="0x3">
+					<name>GPSReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,161</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000016" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{8c7f86f4-b199-4527-8e73-69619c5ad174}" relid="0x4">
+					<name>FrontBumperSensor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>252,7</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000017" kind="IRReceiver" role="IRReceiver" guid="{4817b6e5-6125-47df-a80c-d07e464bd948}" relid="0x5">
+					<name>IRReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,315</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000018" kind="IRTransmitter" role="IRTransmitter" guid="{058de2db-1cb0-456c-a606-d9a9fda6d5f9}" relid="0x6">
+					<name>IRTransmitter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,476</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000019" kind="LANAdapter" role="LANAdapter" guid="{bea15750-d198-4fdf-ae31-f8af3cbdcded}" relid="0x7">
+					<name>LANAdapter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>294,672</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-0000001a" kind="VideoCamera" role="VideoCamera" guid="{abcdc970-909c-4650-a2a9-d5fa42fef03b}" relid="0x8">
+					<name>VideoCamera</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>308,798</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-0000000c" kind="RCU" role="RCU" guid="{2d5efadc-84e2-49eb-8ce9-cd879e47b553}" relid="0x3" childrelidcntr="0x8">
+				<name>RCU3</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>154,455</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-0000000d" kind="iRobot" role="iRobot" guid="{d60587ab-40b8-4364-9cb0-8e7744531904}" relid="0x1" childrelidcntr="0x3">
+					<name>iRobotCreate</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>861,385</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<atom id="id-0066-0000001b" kind="Wheels" role="Wheels" guid="{49353c07-b133-4f53-bbcf-1e05cf37d6de}" relid="0x1">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1162,112</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000001c" kind="Wheels" role="Wheels" guid="{22377acf-f293-4ac6-8752-bbe4a469423d}" relid="0x2">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1225,406</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000001d" kind="Motor" role="Motor" guid="{e38c941c-aef7-46b0-a991-7b596fbd841d}" relid="0x3">
+						<name>Motor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>420,203</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<model id="id-0065-0000000e" kind="eBox3854" role="eBox3854" guid="{62e689ea-3512-48e8-b9cf-fe8da1271bda}" relid="0x2" childrelidcntr="0x4">
+					<name>eBox3854</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>868,210</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-0000001e" kind="FlashStorage" role="FlashStorage" guid="{f16523ad-8eb5-4af3-9632-0e6229766fd5}" relid="0x1">
+						<name>FlashStorage</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>973,259</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000001f" kind="Memory" role="Memory" guid="{74b7f42c-cad3-48e4-ad33-1161323fa116}" relid="0x2">
+						<name>Memory</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>994,420</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000020" kind="Processor" role="Processor" guid="{ea771113-61dc-49ed-a00c-60882a88365b}" relid="0x3">
+						<name>Processor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,525</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000021" kind="FedoraLinux" role="FedoraLinux" guid="{9e8e6a0b-3440-4822-bc93-b780986a31aa}" relid="0x4">
+						<name>FedoraLinux</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,714</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<atom id="id-0066-00000022" kind="GPSReceiver" role="GPSReceiver" guid="{4878dba8-3c86-4003-aa5e-9fb2c5a00703}" relid="0x3">
+					<name>GPSReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,161</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000023" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{659c224c-3356-419d-a3e1-7d9d6499484a}" relid="0x4">
+					<name>FrontBumperSensor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>252,7</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000024" kind="IRReceiver" role="IRReceiver" guid="{3647b970-666a-4bee-bef2-8e42814f3601}" relid="0x5">
+					<name>IRReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,315</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000025" kind="IRTransmitter" role="IRTransmitter" guid="{4836a95b-e6ad-433e-9367-87d6e8520fcb}" relid="0x6">
+					<name>IRTransmitter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,476</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000026" kind="LANAdapter" role="LANAdapter" guid="{ef19d4a8-1fc3-4f68-9943-8cc05d4c8b85}" relid="0x7">
+					<name>LANAdapter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>294,672</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000027" kind="VideoCamera" role="VideoCamera" guid="{45932064-3010-4e23-9135-b19db0ba0550}" relid="0x8">
+					<name>VideoCamera</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>308,798</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-0000000f" kind="ACU" role="ACU" guid="{0774fc2f-d288-4079-bf74-7240c0e18c71}" relid="0x4" childrelidcntr="0x0">
+				<name>ACU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>693,273</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="AdminSoftware" status="meta">
+					<value></value>
+				</attribute>
+				<attribute kind="ConfigurationType" status="meta">
+					<value>Demonstration</value>
+				</attribute>
+				<attribute kind="OS" status="meta">
+					<value></value>
+				</attribute>
+			</model>
+			<model id="id-0065-00000010" kind="RCU" role="RCU" guid="{dc2b64ae-5d02-4f6f-80b8-f812350cdb86}" relid="0x5" childrelidcntr="0x8">
+				<name>RCU1</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>154,84</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-00000011" kind="iRobot" role="iRobot" guid="{cbd4ab28-9ae3-4f42-8dcb-3728d9caf7bd}" relid="0x1" childrelidcntr="0x3">
+					<name>iRobotCreate</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>861,385</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<atom id="id-0066-00000028" kind="Wheels" role="Wheels" guid="{23984be1-6bb9-49ef-bcaf-f04f57a5e726}" relid="0x1">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1162,112</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-00000029" kind="Wheels" role="Wheels" guid="{03f76a56-a5bf-465b-a7ed-8f6427c23ccf}" relid="0x2">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1225,406</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000002a" kind="Motor" role="Motor" guid="{d4cc9046-8d2f-4ea7-a59f-09eb0c7ed167}" relid="0x3">
+						<name>Motor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>420,203</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<model id="id-0065-00000012" kind="eBox3854" role="eBox3854" guid="{d3f32d0a-7ae5-4325-aebc-a9d8b9bf381d}" relid="0x2" childrelidcntr="0x4">
+					<name>eBox3854</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>868,210</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-0000002b" kind="FlashStorage" role="FlashStorage" guid="{bec293ae-1961-4649-9f5a-52a5001d4edb}" relid="0x1">
+						<name>FlashStorage</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>973,259</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000002c" kind="Memory" role="Memory" guid="{05876f7e-a538-4a5d-b8f4-db6f89e09987}" relid="0x2">
+						<name>Memory</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>994,420</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000002d" kind="Processor" role="Processor" guid="{ca6c50f4-6d37-471f-aa66-b18368188546}" relid="0x3">
+						<name>Processor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,525</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000002e" kind="FedoraLinux" role="FedoraLinux" guid="{6ec06ed5-36be-4fe2-bebb-19854dfa229d}" relid="0x4">
+						<name>FedoraLinux</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>959,714</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<atom id="id-0066-0000002f" kind="GPSReceiver" role="GPSReceiver" guid="{3dc62970-728d-47cb-803c-319eb8d1e951}" relid="0x3">
+					<name>GPSReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,161</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000030" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{d6c9b3a9-5183-4d32-b697-8dc02c55907b}" relid="0x4">
+					<name>FrontBumperSensor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>252,7</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000031" kind="IRReceiver" role="IRReceiver" guid="{9194c066-b8ea-4bd6-87b8-9e80545d92e9}" relid="0x5">
+					<name>IRReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,315</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000032" kind="IRTransmitter" role="IRTransmitter" guid="{c8927463-b9bc-4954-bd8d-5191e8707c13}" relid="0x6">
+					<name>IRTransmitter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>266,476</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000033" kind="LANAdapter" role="LANAdapter" guid="{9c689562-1a0a-4891-8b0d-f3a990003fa0}" relid="0x7">
+					<name>LANAdapter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>294,672</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000034" kind="VideoCamera" role="VideoCamera" guid="{1ff59897-90f8-4e26-a86d-edaaf71eb71f}" relid="0x8">
+					<name>VideoCamera</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>308,798</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<connection id="id-0068-00000001" kind="AcuRcuConnection" role="AcuRcuConnection" guid="{d4d98735-cdfc-4b3e-bd5b-532f31c5e85d}" relid="0x6">
+				<name>AcuRcuConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ss</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="DataExchange" status="meta">
+					<value>SensorData</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000006"/>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+			</connection>
+			<connection id="id-0068-00000002" kind="AcuEboxConenction" role="AcuEboxConenction" guid="{6c5579f9-4009-4156-b6cb-258b8ce91f8e}" relid="0x7">
+				<name>AcuEboxConenction</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>e</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Configurations" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+			</connection>
+			<connection id="id-0068-00000003" kind="AcuRcuConnection" role="AcuRcuConnection" guid="{4dbae128-db42-4b05-ade8-f0a3fef646b1}" relid="0x8">
+				<name>AcuRcuConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Se</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="DataExchange" status="meta">
+					<value>SensorData</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000009"/>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+			</connection>
+			<connection id="id-0068-00000004" kind="AcuEboxConenction" role="AcuEboxConenction" guid="{786b2ea1-8f7e-4a8b-820b-1a396c19ac8d}" relid="0x9">
+				<name>AcuEboxConenction</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>e</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Configurations" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+			</connection>
+			<connection id="id-0068-00000005" kind="AcuRcuConnection" role="AcuRcuConnection" guid="{ad9e8660-bb03-4c0e-84d9-cec9d467980f}" relid="0xa">
+				<name>AcuRcuConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>S</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="DataExchange" status="meta">
+					<value>SensorData</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000c"/>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+			</connection>
+			<connection id="id-0068-00000006" kind="AcuEboxConenction" role="AcuEboxConenction" guid="{de8928d7-ba61-4d20-a9bd-476969fedb2b}" relid="0xb">
+				<name>AcuEboxConenction</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Configurations" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+			</connection>
+			<connection id="id-0068-00000007" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{f34748a6-264e-499d-b416-fda768b41170}" relid="0xc">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to Video Camera</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0066-0000000d"/>
+			</connection>
+			<connection id="id-0068-00000008" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{c5e5cba9-4936-4004-81bb-681298bc0bc8}" relid="0xd">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receives and Processes Video Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0066-0000000d"/>
+			</connection>
+			<connection id="id-0068-00000009" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{b2f74110-72da-410b-8222-59a0fb1c86a8}" relid="0xe">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to WiFi LAN</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0066-0000000c"/>
+			</connection>
+			<connection id="id-0068-0000000a" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{fd62fcd9-e89b-4112-a90b-b8c6e8412f59}" relid="0xf">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive IR Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0066-0000000b"/>
+			</connection>
+			<connection id="id-0068-0000000b" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{b769b429-51f0-46d6-add2-ebd6ee7c7d61}" relid="0x10">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to IRreceiver</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0066-0000000a"/>
+			</connection>
+			<connection id="id-0068-0000000c" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{01ed62fe-23cc-4ceb-89c0-b715cdd9a9d1}" relid="0x11">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to GPS</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0066-00000008"/>
+			</connection>
+			<connection id="id-0068-0000000d" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{9690c3cb-f4ef-47e9-908e-9ae3de7e3233}" relid="0x12">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive and Analyze Sensor data</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000008"/>
+				<connpoint role="dst" target="id-0066-00000009"/>
+			</connection>
+			<connection id="id-0068-0000000e" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{2fea3af1-5311-4a15-93a4-105b063a620e}" relid="0x13">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to Video Camera</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0066-0000001a"/>
+			</connection>
+			<connection id="id-0068-0000000f" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{c4f199d5-a34f-47ae-8ca8-70b1b93a30a7}" relid="0x14">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receives and Processes Video Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0066-0000001a"/>
+			</connection>
+			<connection id="id-0068-00000010" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{59ddd659-9f73-4e39-9b4f-cc0f50428d94}" relid="0x15">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to WiFi LAN</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0066-00000019"/>
+			</connection>
+			<connection id="id-0068-00000011" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{6649c5a3-6f6a-4179-ba53-1f4f52fc4436}" relid="0x16">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive IR Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0066-00000018"/>
+			</connection>
+			<connection id="id-0068-00000012" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{f5825332-2fd6-494b-888d-b0751a7b89c6}" relid="0x17">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to IRreceiver</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0066-00000017"/>
+			</connection>
+			<connection id="id-0068-00000013" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{592cc849-987d-4aca-b3ff-67a93757c6fb}" relid="0x18">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to GPS</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0066-00000015"/>
+			</connection>
+			<connection id="id-0068-00000014" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{405a2412-fc4d-4c6e-9c18-11b5513d39af}" relid="0x19">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive and Analyze Sensor data</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000b"/>
+				<connpoint role="dst" target="id-0066-00000016"/>
+			</connection>
+			<connection id="id-0068-00000015" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{e1b22ca6-6d62-4786-b58b-6f75b6456f70}" relid="0x1a">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to Video Camera</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0066-00000027"/>
+			</connection>
+			<connection id="id-0068-00000016" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{2ac49fba-c1f7-4f28-a208-c8edca64fdd1}" relid="0x1b">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receives and Processes Video Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0066-00000027"/>
+			</connection>
+			<connection id="id-0068-00000017" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{754f387e-5677-4bf2-a95d-ecd59dec6716}" relid="0x1c">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to WiFi LAN</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0066-00000026"/>
+			</connection>
+			<connection id="id-0068-00000018" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{8081c5bf-0904-46b3-b47d-e34bf50983cd}" relid="0x1d">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive IR Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0066-00000025"/>
+			</connection>
+			<connection id="id-0068-00000019" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{dbc5f6a7-3da6-4df3-b96a-f20212277eb9}" relid="0x1e">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to IRreceiver</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0066-00000024"/>
+			</connection>
+			<connection id="id-0068-0000001a" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{700aa1ad-8ac6-47fc-84c6-ede22d39a26d}" relid="0x1f">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to GPS</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0066-00000022"/>
+			</connection>
+			<connection id="id-0068-0000001b" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{84bd81a2-4483-482a-bc49-d25dbc8af8ea}" relid="0x20">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive and Analyze Sensor data</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-0000000e"/>
+				<connpoint role="dst" target="id-0066-00000023"/>
+			</connection>
+			<connection id="id-0068-0000001c" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{dca7e47f-e535-48c1-bc1a-76c0f4675c42}" relid="0x21">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to Video Camera</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000012"/>
+				<connpoint role="dst" target="id-0066-00000034"/>
+			</connection>
+			<connection id="id-0068-0000001d" kind="AcuRcuConnection" role="AcuRcuConnection" guid="{8c21fd06-9d21-4355-b303-c26d4c3cdbec}" relid="0x22">
+				<name>AcuRcuConnection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sw</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="DataExchange" status="meta">
+					<value>SensorData</value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+				<connpoint role="src" target="id-0065-00000010"/>
+			</connection>
+			<connection id="id-0068-0000001e" kind="AcuEboxConenction" role="AcuEboxConenction" guid="{692cffca-305d-4a2a-9eda-fde79928bac7}" relid="0x23">
+				<name>AcuEboxConenction</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Configurations" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-0000000f"/>
+				<connpoint role="src" target="id-0065-00000012"/>
+			</connection>
+			<connection id="id-0068-0000001f" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{9c9d674a-ac5b-42b7-95b6-d7f42c0781ad}" relid="0x24">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receives and Processes Video Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000012"/>
+				<connpoint role="dst" target="id-0066-00000034"/>
+			</connection>
+			<connection id="id-0068-00000020" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{e60a622b-10d0-47ff-b4ae-99108db18a4e}" relid="0x25">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to WiFi LAN</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000012"/>
+				<connpoint role="dst" target="id-0066-00000033"/>
+			</connection>
+			<connection id="id-0068-00000021" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{ec046246-2cfd-4492-b868-c5bd6c9e06dc}" relid="0x26">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive IR Readings</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000012"/>
+				<connpoint role="dst" target="id-0066-00000032"/>
+			</connection>
+			<connection id="id-0068-00000022" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{98b14184-30f0-4f79-8da2-f5a5dfdb062d}" relid="0x27">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to IRreceiver</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000012"/>
+				<connpoint role="dst" target="id-0066-00000031"/>
+			</connection>
+			<connection id="id-0068-00000023" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{27f08315-bcef-4a43-90c6-730ee6ce2c74}" relid="0x28">
+				<name>RCUControllerConnection</name>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Sends commands to GPS</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000012"/>
+				<connpoint role="dst" target="id-0066-0000002f"/>
+			</connection>
+			<connection id="id-0068-00000024" kind="RCUControllerConnection" role="RCUControllerConnection" guid="{90a22044-4fd1-4c5a-b071-81bea81808fe}" relid="0x29">
+				<name>RCUControllerConnection</name>
+				<regnode name="srcStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Functions">
+					<value>Receive and Analyze Sensor data</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000012"/>
+				<connpoint role="dst" target="id-0066-00000030"/>
+			</connection>
+		</model>
+		<model id="id-0065-00000005" kind="Route" guid="{83da5333-33e3-4074-874a-cc46ab3660ea}" relid="0x5" childrelidcntr="0x19">
+			<name>Route</name>
+			<model id="id-0065-00000013" kind="RCU" role="RCU" guid="{4260bbb1-ed9f-45ab-a621-e9197678f5ce}" relid="0x5" childrelidcntr="0x8">
+				<name>RCU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>21,63</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-00000014" kind="iRobot" role="iRobot" guid="{c21f9673-6962-4389-aea1-0fec4c390b64}" relid="0x1" childrelidcntr="0x3">
+					<name>iRobot</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>791,434</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<atom id="id-0066-00000039" kind="Wheels" role="Wheels" guid="{9035fac9-299d-4637-a21e-64d4b25df27f}" relid="0x1">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>630,168</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000003a" kind="Wheels" role="Wheels" guid="{5b2d7483-74d3-4040-85c2-451df7baf55c}" relid="0x2">
+						<name>Wheels</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>644,448</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000003b" kind="Motor" role="Motor" guid="{b68bb012-2d0d-479e-8670-23e8afc44e17}" relid="0x3">
+						<name>Motor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>147,315</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<model id="id-0065-00000015" kind="eBox3854" role="eBox3854" guid="{ad30e928-72b3-40ae-b738-af8556a2c9d3}" relid="0x2" childrelidcntr="0x4">
+					<name>eBox3854</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>819,189</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-0000003c" kind="Memory" role="Memory" guid="{06c92911-367a-4d76-a65c-88ca1c4e9fa8}" relid="0x1">
+						<name>Memory</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>735,231</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000003d" kind="FlashStorage" role="FlashStorage" guid="{e60c2ae7-9135-4540-9ba7-340be13fdbda}" relid="0x2">
+						<name>FlashStorage</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>721,378</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000003e" kind="Processor" role="Processor" guid="{7464c6c2-0013-45cf-a0b9-b45ef240443a}" relid="0x3">
+						<name>Processor</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>707,567</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+					<atom id="id-0066-0000003f" kind="FedoraLinux" role="FedoraLinux" guid="{d1d74497-af95-4098-be69-1c44747076a9}" relid="0x4">
+						<name>FedoraLinux</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>700,784</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</atom>
+				</model>
+				<atom id="id-0066-00000040" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{2fc0cf56-8c98-4382-80e3-8a92f569d378}" relid="0x3">
+					<name>FrontBumperSensor</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>154,7</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000041" kind="GPSReceiver" role="GPSReceiver" guid="{2ad8303c-7f44-49cc-8c02-dbc84f949877}" relid="0x4">
+					<name>GPSReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>147,175</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000042" kind="IRTransmitter" role="IRTransmitter" guid="{80384480-f5ed-47cf-9a25-0d12f600f540}" relid="0x5">
+					<name>IRTransmitter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>133,336</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000043" kind="IRReceiver" role="IRReceiver" guid="{4bebb8f2-e2ca-4e0e-8f2c-9cdc9a39c43d}" relid="0x6">
+					<name>IRReceiver</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>119,504</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000044" kind="LANAdapter" role="LANAdapter" guid="{b0bb7fcf-8d0f-4040-800a-3fdccd695ec8}" relid="0x7">
+					<name>LANAdapter</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>154,693</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+				<atom id="id-0066-00000045" kind="VideoCamera" role="VideoCamera" guid="{3b7c492b-7790-41fc-9c70-f999cc0d83cd}" relid="0x8">
+					<name>VideoCamera</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="Aspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>161,819</value>
+							</regnode>
+						</regnode>
+					</regnode>
+				</atom>
+			</model>
+			<model id="id-0065-00000016" kind="ObstacleAvoidanceAlgo" role="ObstacleAvoidanceAlgo" guid="{360c2c4c-068b-4189-bd38-4e77aec67489}" relid="0x6" childrelidcntr="0x0">
+				<name>ObstacleAvoidanceAlgo</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1554,413</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000017" kind="ObstacleAvoidanceAlgo" role="ObstacleAvoidanceAlgo" guid="{16e3bcf3-13ef-40fc-be60-b64400add3a2}" relid="0x7" childrelidcntr="0x0">
+				<name>ObstacleAvoidanceAlgo</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1141,105</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<atom id="id-0066-00000035" kind="Obstacle" role="Obstacle" guid="{1406ba02-736b-444c-b953-123bd6d9a115}" relid="0x1">
+				<name>Obstacle2</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1281,420</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="ObstacleNumber" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="PointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="PointY" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000036" kind="ChargingStation" role="ChargingStation" guid="{dadd7ae8-5e20-4731-9397-440992593b71}" relid="0x2">
+				<name>ChargingStation1</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>735,420</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="Point_x" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="Point_y" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="StationNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000037" kind="Obstacle" role="Obstacle" guid="{1b8f8f1d-8336-4196-b743-45350f384e96}" relid="0x3">
+				<name>Obstacle1</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>889,112</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="ObstacleNumber" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="PointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="PointY" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000038" kind="Waypoint" role="Waypoint" guid="{a217723b-8f46-4160-b785-bd9e21b17301}" relid="0x4">
+				<name>Waypoint1</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>427,112</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="CoordinatePointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="CoordinatePointY" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="WaypointNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000046" kind="Waypoint" role="Waypoint" guid="{7fa42c23-c953-49f9-9b3d-ed7cfbb71f97}" derivedfrom="id-0066-00000038" isinstance="yes" isprimary="yes" relid="0x14">
+				<name>Waypoint7</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1589,882</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="CoordinatePointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="CoordinatePointY" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="WaypointNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000047" kind="Waypoint" role="Waypoint" guid="{425792ff-48c2-4bff-8fb8-0f08ddb5f290}" derivedfrom="id-0066-00000038" isinstance="yes" isprimary="yes" relid="0x15">
+				<name>Waypoint2</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>644,112</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="CoordinatePointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="CoordinatePointY" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="WaypointNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000048" kind="Waypoint" role="Waypoint" guid="{201c4742-b41c-4b36-948d-73fd565cc472}" derivedfrom="id-0066-00000038" isinstance="yes" isprimary="yes" relid="0x16">
+				<name>Waypoint6</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1589,672</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="CoordinatePointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="CoordinatePointY" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="WaypointNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-00000049" kind="Waypoint" role="Waypoint" guid="{29d8e5ad-a660-4bc2-a811-5374158c028e}" derivedfrom="id-0066-00000038" isinstance="yes" isprimary="yes" relid="0x17">
+				<name>Waypoint4</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>434,420</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="CoordinatePointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="CoordinatePointY" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="WaypointNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-0000004a" kind="Waypoint" role="Waypoint" guid="{7a35eb42-4dd7-46cb-9398-9ddc7d58f0e5}" derivedfrom="id-0066-00000049" isinstance="yes" isprimary="yes" relid="0x18">
+				<name>Waypoint5</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1001,420</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="CoordinatePointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="CoordinatePointY" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="WaypointNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-0000004b" kind="Waypoint" role="Waypoint" guid="{ab113a73-ddb6-446e-808f-04153ac95571}" derivedfrom="id-0066-00000049" isinstance="yes" isprimary="yes" relid="0x19">
+				<name>Waypoint3</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1456,112</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="CoordinatePointX" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="CoordinatePointY" status="meta">
+					<value>0</value>
+				</attribute>
+				<attribute kind="WaypointNumber" status="meta">
+					<value>0</value>
+				</attribute>
+			</atom>
+			<connection id="id-0068-00000025" kind="WaypointToWaypoint" role="WaypointToWaypoint" guid="{39d18d87-c645-4f38-8db0-8a1372c9f37d}" relid="0x8">
+				<name>WaypointToWaypoint</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Distance" status="meta">
+					<value>0</value>
+				</attribute>
+				<connpoint role="dst" target="id-0066-00000046"/>
+				<connpoint role="src" target="id-0066-00000048"/>
+			</connection>
+			<connection id="id-0068-00000026" kind="InvokeAvoidanceAlgo" role="InvokeAvoidanceAlgo" guid="{52d74026-6444-4303-ac2a-c7e632d4aec8}" relid="0x9">
+				<name>InvokeAvoidanceAlgo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xffad5b</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="NavigateAroundObstacle" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-00000016"/>
+				<connpoint role="src" target="id-0066-00000035"/>
+			</connection>
+			<connection id="id-0068-00000027" kind="RcuGoesToNext" role="RcuGoesToNext" guid="{c68d1ed8-c5ed-4bbc-9a17-ddf00b6b3549}" relid="0xa">
+				<name>RcuGoesToNext</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="ToWaypoint" status="meta">
+					<value>0</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000013"/>
+				<connpoint role="dst" target="id-0066-00000038"/>
+			</connection>
+			<connection id="id-0068-00000028" kind="WaypointToWaypoint" role="WaypointToWaypoint" guid="{3e0c2f3b-4c12-4126-9ff4-f1b7263d96e6}" relid="0xb">
+				<name>WaypointToWaypoint</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Distance" status="meta">
+					<value>0</value>
+				</attribute>
+				<connpoint role="src" target="id-0066-00000038"/>
+				<connpoint role="dst" target="id-0066-00000047"/>
+			</connection>
+			<connection id="id-0068-00000029" kind="SkipsToNextWaypoint" role="SkipsToNextWaypoint" guid="{c155f06c-1061-4485-872a-9b212f129acb}" relid="0xc">
+				<name>SkipsToNextWaypoint</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>n</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="DistanceToWaypoint" status="meta">
+					<value>0</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000016"/>
+				<connpoint role="dst" target="id-0066-00000048"/>
+			</connection>
+			<connection id="id-0068-0000002a" kind="EncountersObstacle" role="EncountersObstacle" guid="{dbaa5047-4189-48db-ad70-f11174f7e7fe}" relid="0xd">
+				<name>EncountersObstacle</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>E</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="HaltMovement" status="meta">
+					<value>true</value>
+				</attribute>
+				<connpoint role="dst" target="id-0066-00000035"/>
+				<connpoint role="src" target="id-0066-0000004a"/>
+			</connection>
+			<connection id="id-0068-0000002b" kind="ChargesAndMovesToNextWaypoint" role="ChargesAndMovesToNextWaypoint" guid="{46dbd648-6562-4075-87cc-041d2f9dd5c9}" relid="0xe">
+				<name>ChargesAndMovesToNextWaypoint</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="ContinuePath" status="meta">
+					<value>true</value>
+				</attribute>
+				<connpoint role="src" target="id-0066-00000036"/>
+				<connpoint role="dst" target="id-0066-0000004a"/>
+			</connection>
+			<connection id="id-0068-0000002c" kind="EncountersChargingStation" role="EncountersChargingStation" guid="{e3f00736-f06d-4b13-bd1d-8dd3a7bb3cf6}" relid="0xf">
+				<name>EncountersChargingStation</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="StopToRecharge" status="meta">
+					<value>true</value>
+				</attribute>
+				<connpoint role="dst" target="id-0066-00000036"/>
+				<connpoint role="src" target="id-0066-00000049"/>
+			</connection>
+			<connection id="id-0068-0000002d" kind="WaypointToWaypoint" role="WaypointToWaypoint" guid="{19a9491c-70a3-4759-b81f-3dbef9ee347c}" relid="0x10">
+				<name>WaypointToWaypoint</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="Distance" status="meta">
+					<value>0</value>
+				</attribute>
+				<connpoint role="dst" target="id-0066-00000049"/>
+				<connpoint role="src" target="id-0066-0000004b"/>
+			</connection>
+			<connection id="id-0068-0000002e" kind="SkipsToNextWaypoint" role="SkipsToNextWaypoint" guid="{76f80c62-82ce-4391-b80b-a6c18cee21c7}" relid="0x11">
+				<name>SkipsToNextWaypoint</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="DistanceToWaypoint" status="meta">
+					<value>0</value>
+				</attribute>
+				<connpoint role="src" target="id-0065-00000017"/>
+				<connpoint role="dst" target="id-0066-0000004b"/>
+			</connection>
+			<connection id="id-0068-0000002f" kind="InvokeAvoidanceAlgo" role="InvokeAvoidanceAlgo" guid="{9862873a-fcfb-4027-abd4-d2a1776f400f}" relid="0x12">
+				<name>InvokeAvoidanceAlgo</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xffad5b</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="NavigateAroundObstacle" status="meta">
+					<value></value>
+				</attribute>
+				<connpoint role="dst" target="id-0065-00000017"/>
+				<connpoint role="src" target="id-0066-00000037"/>
+			</connection>
+			<connection id="id-0068-00000030" kind="EncountersObstacle" role="EncountersObstacle" guid="{8eaced6e-25fd-403e-a1ea-4d038c79b9ea}" relid="0x13">
+				<name>EncountersObstacle</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>E</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<attribute kind="HaltMovement" status="meta">
+					<value>true</value>
+				</attribute>
+				<connpoint role="dst" target="id-0066-00000037"/>
+				<connpoint role="src" target="id-0066-00000047"/>
+			</connection>
+		</model>
+		<model id="id-0065-00000039" kind="ProtocolMovement" guid="{8d3303e5-e238-4e6b-aca6-e4ecd1d17541}" relid="0x6" childrelidcntr="0x29">
+			<name>ProtocolMovement</name>
+			<model id="id-0065-0000003b" kind="RCU" role="RCU" guid="{8de625f7-7cca-4025-9ad0-0e8a0682674f}" derivedfrom="id-0065-00000010" isinstance="yes" isprimary="yes" relid="0x3" childrelidcntr="0x0">
+				<name>LeaderRcu</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>350,70</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-0000003c" kind="eBox3854" role="eBox3854" guid="{34ced0ef-67a6-4bdb-bd87-6c2c3a742d71}" derivedfrom="id-0065-00000012" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>eBox3854</name>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-00000088" kind="FedoraLinux" role="FedoraLinux" guid="{0a1e1861-3485-4e69-a971-2d4b8eb3505b}" derivedfrom="id-0066-0000002e" isinstance="yes" isprimary="no">
+						<name>FedoraLinux</name>
+					</atom>
+					<atom id="id-0066-00000089" kind="Processor" role="Processor" guid="{02e87ba4-b9ba-497b-a476-9f3a2867a8bc}" derivedfrom="id-0066-0000002d" isinstance="yes" isprimary="no">
+						<name>Processor</name>
+					</atom>
+					<atom id="id-0066-0000008a" kind="Memory" role="Memory" guid="{76abc4c4-ff12-45e4-8b21-f04ca8ad855b}" derivedfrom="id-0066-0000002c" isinstance="yes" isprimary="no">
+						<name>Memory</name>
+					</atom>
+					<atom id="id-0066-0000008b" kind="FlashStorage" role="FlashStorage" guid="{ae555e67-1ab8-45de-ac6d-134c54b76fe2}" derivedfrom="id-0066-0000002b" isinstance="yes" isprimary="no">
+						<name>FlashStorage</name>
+					</atom>
+				</model>
+				<model id="id-0065-0000003d" kind="iRobot" role="iRobot" guid="{51003979-7eed-4f6b-9bd5-9fcb4b780aee}" derivedfrom="id-0065-00000011" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>iRobotCreate</name>
+					<atom id="id-0066-0000008c" kind="Motor" role="Motor" guid="{10c07b24-c2ba-45ed-be9c-992db51d7e90}" derivedfrom="id-0066-0000002a" isinstance="yes" isprimary="no">
+						<name>Motor</name>
+					</atom>
+					<atom id="id-0066-0000008d" kind="Wheels" role="Wheels" guid="{a797b5ed-0eef-4a43-baa2-7a9bf2ce73f9}" derivedfrom="id-0066-00000029" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-0000008e" kind="Wheels" role="Wheels" guid="{13791df4-9193-42a9-a4a7-8322eba2348f}" derivedfrom="id-0066-00000028" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+				</model>
+				<atom id="id-0066-00000082" kind="VideoCamera" role="VideoCamera" guid="{3df7afdf-d0bb-462d-bdc2-6229c2edc45c}" derivedfrom="id-0066-00000034" isinstance="yes" isprimary="no">
+					<name>VideoCamera</name>
+				</atom>
+				<atom id="id-0066-00000083" kind="LANAdapter" role="LANAdapter" guid="{a832d791-35cd-49a9-9eec-aba1c3a0669a}" derivedfrom="id-0066-00000033" isinstance="yes" isprimary="no">
+					<name>LANAdapter</name>
+				</atom>
+				<atom id="id-0066-00000084" kind="IRTransmitter" role="IRTransmitter" guid="{a8493186-4500-4547-a833-4aa1afc905de}" derivedfrom="id-0066-00000032" isinstance="yes" isprimary="no">
+					<name>IRTransmitter</name>
+				</atom>
+				<atom id="id-0066-00000085" kind="IRReceiver" role="IRReceiver" guid="{793f9d5b-974c-4688-a2fd-0ade696f7225}" derivedfrom="id-0066-00000031" isinstance="yes" isprimary="no">
+					<name>IRReceiver</name>
+				</atom>
+				<atom id="id-0066-00000086" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{ec3328e0-97cd-4c40-9440-c9ecb268273e}" derivedfrom="id-0066-00000030" isinstance="yes" isprimary="no">
+					<name>FrontBumperSensor</name>
+				</atom>
+				<atom id="id-0066-00000087" kind="GPSReceiver" role="GPSReceiver" guid="{fdf6f899-380c-426e-ad26-7b4223fe219c}" derivedfrom="id-0066-0000002f" isinstance="yes" isprimary="no">
+					<name>GPSReceiver</name>
+				</atom>
+			</model>
+			<model id="id-0065-0000003e" kind="RCU" role="RCU" guid="{3709e23e-58c2-4801-8c03-b21aa4cc9aa6}" derivedfrom="id-0065-00000010" isinstance="yes" isprimary="yes" relid="0x4" childrelidcntr="0x0">
+				<name>FollowerRCU</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>364,399</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="RCUNumber" status="meta">
+					<value></value>
+				</attribute>
+				<model id="id-0065-0000003f" kind="eBox3854" role="eBox3854" guid="{baac3fba-fbb0-4715-8fd1-7743d4de2951}" derivedfrom="id-0065-00000012" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>eBox3854</name>
+					<attribute kind="RCUSwController" status="meta">
+						<value></value>
+					</attribute>
+					<atom id="id-0066-00000090" kind="Memory" role="Memory" guid="{bcf1ce48-8c27-4c1a-ad2f-2a19ec696781}" derivedfrom="id-0066-0000002c" isinstance="yes" isprimary="no">
+						<name>Memory</name>
+					</atom>
+					<atom id="id-0066-00000091" kind="Processor" role="Processor" guid="{153c637a-08de-4d43-9a99-89f77bbca306}" derivedfrom="id-0066-0000002d" isinstance="yes" isprimary="no">
+						<name>Processor</name>
+					</atom>
+					<atom id="id-0066-00000092" kind="FedoraLinux" role="FedoraLinux" guid="{7f897c1e-6b4c-48ba-abb8-364c5e56362d}" derivedfrom="id-0066-0000002e" isinstance="yes" isprimary="no">
+						<name>FedoraLinux</name>
+					</atom>
+					<atom id="id-0066-00000093" kind="FlashStorage" role="FlashStorage" guid="{ff7f1769-e234-43ef-a66e-4ced9c7040b7}" derivedfrom="id-0066-0000002b" isinstance="yes" isprimary="no">
+						<name>FlashStorage</name>
+					</atom>
+				</model>
+				<model id="id-0065-00000040" kind="iRobot" role="iRobot" guid="{81f1f66f-5755-489c-8e78-500771016c80}" derivedfrom="id-0065-00000011" isinstance="yes" isprimary="no" childrelidcntr="0x0">
+					<name>iRobotCreate</name>
+					<atom id="id-0066-00000097" kind="Wheels" role="Wheels" guid="{de6f5542-509f-4a0e-aac1-46cd66095e01}" derivedfrom="id-0066-00000028" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+					<atom id="id-0066-00000098" kind="Motor" role="Motor" guid="{236bf728-0499-4826-bac4-871088e12dd7}" derivedfrom="id-0066-0000002a" isinstance="yes" isprimary="no">
+						<name>Motor</name>
+					</atom>
+					<atom id="id-0066-00000099" kind="Wheels" role="Wheels" guid="{18e2c82f-1fc2-418d-a307-a73269611c09}" derivedfrom="id-0066-00000029" isinstance="yes" isprimary="no">
+						<name>Wheels</name>
+					</atom>
+				</model>
+				<atom id="id-0066-0000008f" kind="VideoCamera" role="VideoCamera" guid="{95a6e22b-4b08-43be-a581-a928d6da6081}" derivedfrom="id-0066-00000034" isinstance="yes" isprimary="no">
+					<name>VideoCamera</name>
+				</atom>
+				<atom id="id-0066-00000094" kind="FrontBumperSensor" role="FrontBumperSensor" guid="{be0d772d-a089-4284-bcc0-35f81813e2f9}" derivedfrom="id-0066-00000030" isinstance="yes" isprimary="no">
+					<name>FrontBumperSensor</name>
+				</atom>
+				<atom id="id-0066-00000095" kind="GPSReceiver" role="GPSReceiver" guid="{1a912fc8-baf9-4fab-90be-c2914d6fdf6c}" derivedfrom="id-0066-0000002f" isinstance="yes" isprimary="no">
+					<name>GPSReceiver</name>
+				</atom>
+				<atom id="id-0066-00000096" kind="IRReceiver" role="IRReceiver" guid="{3688b36c-0bb0-4967-8d72-42379417dda1}" derivedfrom="id-0066-00000031" isinstance="yes" isprimary="no">
+					<name>IRReceiver</name>
+				</atom>
+				<atom id="id-0066-0000009a" kind="LANAdapter" role="LANAdapter" guid="{67d87870-15c0-4aa1-ba11-c72c4f74e94f}" derivedfrom="id-0066-00000033" isinstance="yes" isprimary="no">
+					<name>LANAdapter</name>
+				</atom>
+				<atom id="id-0066-0000009b" kind="IRTransmitter" role="IRTransmitter" guid="{dce5fd4e-d735-41f8-869d-49a29036dbe4}" derivedfrom="id-0066-00000032" isinstance="yes" isprimary="no">
+					<name>IRTransmitter</name>
+				</atom>
+			</model>
+			<model id="id-0065-00000041" kind="IdentifyNextWaypoint" role="IdentifyNextWaypoint" guid="{f495a239-de1d-4bc1-9e9e-1d02089b7591}" relid="0x6" childrelidcntr="0x0">
+				<name>IdentifyNextWaypoint</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1197,91</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000043" kind="ObstacleAvoidanceAlgo" role="ObstacleAvoidanceAlgo" guid="{f761c7e5-634c-4359-a5b7-9124b4d167a6}" relid="0x9" childrelidcntr="0x0">
+				<name>ObstacleAvoidanceAlgo</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1519,462</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000044" kind="AreaDark" role="AreaDark" guid="{37c2f354-2a51-4c9a-b412-452202e4f1ec}" relid="0xb" childrelidcntr="0x0">
+				<name>AreaDark_and_Outdoors</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>812,798</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000045" kind="AreaDark" role="AreaDark" guid="{cefa7ab4-4afe-425e-9c21-b42af63238fa}" relid="0xd" childrelidcntr="0x0">
+				<name>AreaDark_indoors_and_DistanceSmall</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1036,798</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<model id="id-0065-00000046" kind="IsitObstacle" role="IsitObstacle" guid="{0cae49e9-c84f-4491-a8cc-2269cbcf49fe}" relid="0x26" childrelidcntr="0x0">
+				<name>Obstacle</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1568,91</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</model>
+			<atom id="id-0066-00000081" kind="StartMovement" role="StartMovement" guid="{4ab572ca-9f39-4d0b-b658-a3d350b5d687}" relid="0x1">
+				<name>StartMovement</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>119,154</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</atom>
+			<atom id="id-0066-0000009c" kind="GPSsignals" role="GPSsignals" guid="{a881909b-0328-4f2e-8086-705f03a59e87}" relid="0x5">
+				<name>GPSsignals</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>917,112</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</atom>
+			<atom id="id-0066-0000009d" kind="invokeMsg" role="invokeMsg" guid="{fb02ba02-91f9-43c3-90e3-9c5a16771e7e}" relid="0x8">
+				<name>invokeMsg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1575,273</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="Invoke_msg_type" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-0000009e" kind="track" role="track" guid="{68742eb3-2c11-4b5c-b57a-a50e3b99c684}" relid="0xa">
+				<name>track</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>952,434</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</atom>
+			<atom id="id-0066-0000009f" kind="switch_to_gps_msg" role="switch_to_gps_msg" guid="{aeca47b6-e4b3-4a20-9b54-5f79679bc51d}" relid="0xc">
+				<name>switch_to_gps_msg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>553,798</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="sentMsg_type" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-000000a0" kind="switch_to_IR_msg" role="switch_to_IR_msg" guid="{6b46d1e3-6cc2-481a-87f9-45686d399acb}" relid="0xe">
+				<name>switch_to_IR_msg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>581,987</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="Sent_msg_type" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<atom id="id-0066-000000a1" kind="Else_EnvironmentBad" role="Else_EnvironmentBad" guid="{9ccf10c6-b1cd-47cf-b5c2-ba26b04102ba}" relid="0x10">
+				<name>Else_If_EnvironmentBad</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>1232,791</value>
+						</regnode>
+					</regnode>
+				</regnode>
+			</atom>
+			<atom id="id-0066-000000a2" kind="Halt_and_wait_msg" role="Halt_and_wait_msg" guid="{50ac63ce-0970-4d4c-ae38-1993009eceab}" relid="0x11">
+				<name>Halt_and_wait_msg</name>
+				<regnode name="PartRegs" status="undefined">
+					<value></value>
+					<regnode name="Aspect" status="undefined">
+						<value></value>
+						<regnode name="Position" isopaque="yes">
+							<value>588,1162</value>
+						</regnode>
+					</regnode>
+				</regnode>
+				<attribute kind="halt_msg_type" status="meta">
+					<value></value>
+				</attribute>
+			</atom>
+			<connection id="id-0068-00000067" kind="start_movement_connection" role="start_movement_connection" guid="{641e7f30-30c3-4034-b41c-e19c024d9bd2}" relid="0x13">
+				<name>1.start_InMovement</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000003b"/>
+				<connpoint role="src" target="id-0066-00000081"/>
+			</connection>
+			<connection id="id-0068-00000068" kind="gps_signal_connection" role="gps_signal_connection" guid="{79f3187c-5dd4-4260-8fbf-40cc1d44defb}" relid="0x14">
+				<name>2.Gps_sends</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0066-00000087"/>
+				<connpoint role="dst" target="id-0066-0000009c"/>
+			</connection>
+			<connection id="id-0068-00000069" kind="signal_waypoint_connection" role="signal_waypoint_connection" guid="{0ae0f207-20b6-4b67-aff9-568ecbc08975}" relid="0x15">
+				<name>2.Signals_Used_To</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000041"/>
+				<connpoint role="src" target="id-0066-0000009c"/>
+			</connection>
+			<connection id="id-0068-0000006c" kind="Connection" role="Connection" guid="{3f207025-e53d-420d-b946-fd936146dbbd}" relid="0x18">
+				<name>4.invokeAlsgorithm</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000043"/>
+				<connpoint role="src" target="id-0066-0000009d"/>
+			</connection>
+			<connection id="id-0068-0000006d" kind="continue_to" role="continue_to" guid="{40e02f67-7728-42bd-b531-8c32153eb147}" relid="0x19">
+				<name>5.continue_to</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>W</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x3cb371</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000041"/>
+				<connpoint role="src" target="id-0065-00000043"/>
+			</connection>
+			<connection id="id-0068-0000006e" kind="camera_to" role="camera_to" guid="{42b94a71-9882-45cc-88f2-c68adc14ffd9}" relid="0x1a">
+				<name>2.Uses_camera_to</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>w</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0066-0000008f"/>
+				<connpoint role="dst" target="id-0066-0000009e"/>
+			</connection>
+			<connection id="id-0068-00000070" kind="onTracking_if" role="onTracking_if" guid="{f8b77e8f-5fd1-4312-aaa3-2b7ab0de0bad}" relid="0x1c">
+				<name>OnTracking_if</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000044"/>
+				<connpoint role="src" target="id-0066-0000009e"/>
+			</connection>
+			<connection id="id-0068-00000071" kind="Switch_connection" role="Switch_connection" guid="{5d95196f-4626-4258-8665-cdadc86bbee9}" relid="0x1d">
+				<name>Switch_GPS_connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>W</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000044"/>
+				<connpoint role="dst" target="id-0066-0000009f"/>
+			</connection>
+			<connection id="id-0068-00000073" kind="to_rcu" role="to_rcu" guid="{d5bab6f5-99c3-4c6b-8c89-7b0d688e663d}" relid="0x1e">
+				<name>msg_rcu_connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ww</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000003e"/>
+				<connpoint role="src" target="id-0066-0000009f"/>
+			</connection>
+			<connection id="id-0068-00000074" kind="onTracking_if" role="onTracking_if" guid="{a077b8f2-023d-45f0-88f9-9cb2b55a270c}" relid="0x1f">
+				<name>onTracking_if</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-00000045"/>
+				<connpoint role="src" target="id-0066-0000009e"/>
+			</connection>
+			<connection id="id-0068-00000075" kind="Switch_to_IR_connection" role="Switch_to_IR_connection" guid="{cf0c04f1-5b4d-4028-8af6-96057570944d}" relid="0x20">
+				<name>Switch_to_IR_connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Se</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000045"/>
+				<connpoint role="dst" target="id-0066-000000a0"/>
+			</connection>
+			<connection id="id-0068-00000076" kind="TO_RCU" role="TO_RCU" guid="{db8c6814-4b0d-42f5-9015-dd9b5caf589f}" relid="0x21">
+				<name>msg_rcu_connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ww</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000003e"/>
+				<connpoint role="src" target="id-0066-000000a0"/>
+			</connection>
+			<connection id="id-0068-00000077" kind="TrackEnvironment_connection" role="TrackEnvironment_connection" guid="{a2126ab7-a237-497b-b0ea-a5eb5e0d5146}" relid="0x22">
+				<name>TrackEnvironment_connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0066-0000009e"/>
+				<connpoint role="dst" target="id-0066-000000a1"/>
+			</connection>
+			<connection id="id-0068-00000078" kind="Halt_Connection" role="Halt_Connection" guid="{42fa12ec-117a-4daa-b5a9-5c863e27d8f1}" relid="0x23">
+				<name>Halt_Connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Se</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0066-000000a1"/>
+				<connpoint role="dst" target="id-0066-000000a2"/>
+			</connection>
+			<connection id="id-0068-00000079" kind="to_RCU" role="to_RCU" guid="{7b8f11b0-ef84-465b-839c-624ac0787785}" relid="0x24">
+				<name>Msg_to_RCU</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ww</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x800080</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000003e"/>
+				<connpoint role="src" target="id-0066-000000a2"/>
+			</connection>
+			<connection id="id-0068-0000007a" kind="waypoint_obstacle_connection" role="waypoint_obstacle_connection" guid="{c4d00c0b-3d6a-4f2e-9ba6-79b36de9664c}" relid="0x27">
+				<name>3.If_obstacle_found</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Ew</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000041"/>
+				<connpoint role="dst" target="id-0065-00000046"/>
+			</connection>
+			<connection id="id-0068-0000007b" kind="obstacle_mesg_connection" role="obstacle_mesg_connection" guid="{6cf34426-971d-4b56-ba45-000a8b5cc4c8}" relid="0x28">
+				<name>4.obstacle_invoke_connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>Sn</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0xff0000</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="src" target="id-0065-00000046"/>
+				<connpoint role="dst" target="id-0066-0000009d"/>
+			</connection>
+			<connection id="id-0068-0000007c" kind="track_connection" role="track_connection" guid="{2c63e9f4-00f3-4ff6-8159-d5826b13e372}" relid="0x29">
+				<name>track_connection</name>
+				<regnode name="autorouterPref" isopaque="yes">
+					<value>N</value>
+				</regnode>
+				<regnode name="color" isopaque="yes">
+					<value>0x0000ff</value>
+				</regnode>
+				<regnode name="dstStyle" isopaque="yes">
+					<value>arrow</value>
+				</regnode>
+				<connpoint role="dst" target="id-0065-0000003b"/>
+				<connpoint role="src" target="id-0066-0000009e"/>
+			</connection>
+		</model>
+	</folder>
+</project>
